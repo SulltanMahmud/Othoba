@@ -24,3 +24,24 @@ body{
     background:linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%); 
     
 }
+
+
+// category-items
+
+.category-img{
+    width: fit-content;
+    overflow: hidden;
+    border: 0px solid #fff;
+}
+
+.category:hover .category-img{
+border-width: 8px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+img{
+     max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    vertical-align: middle;
+}

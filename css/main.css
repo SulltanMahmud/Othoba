@@ -26,3 +26,25 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
   background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
 }
+
+.category-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  border: 0px solid #fff;
+}
+
+.category:hover .category-img {
+  border-width: 8px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
