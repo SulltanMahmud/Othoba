@@ -1,0 +1,26 @@
+ *{
+     margin: 0;
+     padding: 0;
+}
+
+body{
+     font-family: 'popins', sans-serif;
+     line-height: 1.6;
+     background: #fff;
+}
+
+
+ 
+
+
+.header-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+}
+
+#nav-container{
+    background:linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%); 
+    
+}
