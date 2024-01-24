@@ -35,7 +35,7 @@ body {
   transition: -webkit-box-shadow 0.1s;
   transition: box-shadow 0.1s;
   transition: box-shadow 0.1s, -webkit-box-shadow 0.1s;
-  min-width: 90px;
+  min-width: 80px;
 }
 
 .category:hover .category-img {
