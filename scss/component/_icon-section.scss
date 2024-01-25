@@ -1,0 +1,29 @@
+.item{
+
+     display: flex;
+     align-items: center;
+     
+    &-img i{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    
+
+    &-content h4{
+        font-size: 14px;
+        cursor: pointer;
+        margin-bottom: 0;
+        
+    }
+
+    &-content p{
+        font-size: 13px;
+        cursor: pointer;
+        font-weight: 300;
+        text-align: center;
+    }
+    &-content{
+        margin-top: 20px;
+    }
+}
