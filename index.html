@@ -8,8 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300;400&family=Poppins:wght@300;500&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <!-- css-Link -->
-    <link rel="stylesheet" href="/css/main.css" />
     <!-- Bootstrap-link -->
     <link
       rel="stylesheet"
@@ -25,7 +23,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
-
+    <!-- css-Link -->
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Othoba.Com</title>
   </head>
   <body class="bg-light">
@@ -44,7 +43,6 @@
     </header>
 
     <!-- Category Section -->
-
     <div class="container">
       <div class="row">
         <div class="category col-md-1 mt-3">
@@ -255,43 +253,46 @@
     <!-- Splider Image -->
 
     <div class="container mt-3">
-      <div class="row">
+      <div class="row" style="border: 2px solid red">
         <div class="col-9">
           <div class="splide">
             <div class="splide__slider">
               <div class="splide__track">
                 <ul class="splide__list">
-                  <li class="splide__slide">
+                  <li
+                    class="splide__slide slider-img"
+                    style="min-height: 500px"
+                  >
                     <img
-                      class="rounded-3"
+                      class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 45.jpeg"
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide">
+                  <li class="splide__slide" style="min-height: 500px">
                     <img
-                      class="rounded-3"
+                      class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 46.webp"
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide">
+                  <li class="splide__slide" style="min-height: 500px">
                     <img
-                      class="rounded-3"
+                      class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 47.webp"
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide">
+                  <li class="splide__slide" style="min-height: 500px">
                     <img
-                      class="rounded-3"
+                      class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 48.jpeg"
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide">
+                  <li class="splide__slide" style="min-height: 500px">
                     <img
-                      class="rounded-3"
+                      class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 49.webp"
                       alt=""
                     />
@@ -306,31 +307,31 @@
 
         <div class="col-3">
           <div class="d-flex flex-column gap-3">
-            <div class="sidebar-1 w-100">
+            <div class="sidebar-1">
               <img
                 class="img-fluid rounded-2"
                 src="./assets/assets/asset 14.jpeg"
                 alt=""
               />
             </div>
-            <div class="sidebar-1 w-100">
+            <div class="sidebar-1">
               <img
                 class="img-fluid rounded-2"
                 src="./assets/assets/asset 15.jpeg"
                 alt=""
               />
             </div>
-            <div class="side-bar d-lg-flex gap-2">
-              <div class="sidebar-1 w-100">
+            <div class="d-flex gap-2">
+              <div class="">
                 <img
-                  class="rounded-2"
+                  class="rounded-2 img-fluid"
                   src="./assets/assets/asset 16.jpeg"
                   alt=""
                 />
               </div>
-              <div class="sidebar-1 w-100">
+              <div class="">
                 <img
-                  class="rounded-2"
+                  class="rounded-2 img-fluid"
                   src="./assets/assets/asset 17.jpeg"
                   alt=""
                 />
@@ -398,21 +399,51 @@
       </div>
     </div>
 
-
     <!-- Advertise-img -item-section-->
     <div class="container mt-5">
       <div class="advertise-img">
-        <img src="https://s3.ap-southeast-1.amazonaws.com/images.othoba.com/Content/Images/HomepageGIF/Janweb.gif" alt="">
+        <img
+          class="w-100 img-fluid"
+          src="https://s3.ap-southeast-1.amazonaws.com/images.othoba.com/Content/Images/HomepageGIF/Janweb.gif"
+          alt=""
+        />
       </div>
     </div>
 
+    <!--Tittle-container  -->
+   <div class="container ">
+      <div class="title-container d-flex justify-content-between py-4">
+      <div class="">
+        <h4 class="">Hot Deals of the Day</h4>
+      </div>
+      <div class="input-item ">
+        <a
+          href="#" class="text-decoration">
+        More Products      
+        </a>
+        <i class="fa-solid fa-arrow-right ps-2"></i>
+      </div>
+    </div>
+   </div>
+ 
 
+<!-- Food item-picture -->
+<div class="container mt-3">
+  <div class="row gx-2">
+    <div class="col-6">
+      <img class="rounded" src="./assets/assets/Tasty-Treat-weekly-offer-Banner-Web-dec.webp" alt="" width="100%">
+    </div>
+     <div class="col-6">
+      <img  class="rounded" src="./assets/assets/Mithai-weekly-offer-Banner-Web1-dec.webp" alt="" width="100%">
+    </div>
 
-
-
-
-
-
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/assets/Fry-Bucket.jpeg" alt="" >
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
