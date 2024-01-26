@@ -1,0 +1,32 @@
+.product{
+    &-buy a:hover{
+        background-color:#4c87fc;
+    }
+
+    &-buy a{
+        border: 2px solid black;
+    }
+
+    &-icon {
+         .hover:hover{
+            color: #4c87fc;
+         }
+    }
+    &-title a{
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        line-height: 0.9rem;
+
+        
+       
+    }
+
+    &-title a:hover{
+        color:#4c87fc;
+    }
+
+     
+}

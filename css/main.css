@@ -97,3 +97,53 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
   background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
 }
+
+.product-buy a:hover {
+  background-color: #4c87fc;
+}
+.product-buy a {
+  border: 2px solid black;
+}
+.product-icon .hover:hover {
+  color: #4c87fc;
+}
+.product-title a {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  line-height: 0.9rem;
+}
+.product-title a:hover {
+  color: #4c87fc;
+}
+
+.card-body .card-title {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.product-rating-desert i {
+  font-size: 13px;
+}
+
+.product-review-desert span {
+  font-size: 13px;
+}
+
+.product-amount-desert h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-price-desert span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.discount {
+  font-size: 16px;
+  font-weight: 600;
+}
