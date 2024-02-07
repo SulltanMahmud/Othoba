@@ -1,0 +1,59 @@
+// .nav-underline {
+//   .nav-link {
+//     &.active {
+//       color: rgb(94, 94, 255)
+//     }
+//   }
+//   .nav-link{
+//     color: black;
+//   }
+//   .nav-link:hover{
+//     color: rgb(72, 72, 255);
+    
+//   }
+// }
+
+.nav-link{
+  font-size: 13px;
+  padding:10px 10px; 
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  position: relative;
+   &::before{
+          content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 86px;
+      height: 3px;
+      background-color: #3498db;
+      transform: scaleX(0);
+      // transform-origin: center bottom;
+      transition: transform 0.3s ease-in-out;
+   }
+
+   &:hover{
+    color: #3498db;
+   }
+
+   &:hover::before{
+     
+      transform: scaleX(1);
+      transform-origin: bottom center;
+    
+   }
+   
+   &.active::before{
+     transition: none;
+      transform: scaleX(1);
+      transform-origin:  bottom left;
+   }
+    
+}
+
+
+
+ 
+  

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -35,9 +34,15 @@
       <div class="container">
         <div class="header-items">
           <div class="header-left">
-            <p class="welcome-msg mt-2">WELCOME TO OTHOBA.COM</p>
+            <p class="welcome-msg mt-2 d-lg-block d-none">
+              WELCOME TO OTHOBA.COM
+            </p>
           </div>
-          <div class="header-right">
+          <marquee class="marquee d-lg-none d-sm-block text-center" width="50%"
+            >WELCOME TO OTHOBA.COM</marquee
+          >
+
+          <div class="header-right d-lg-block d-none">
             <a href="#">Sell on Othoba</a>
           </div>
         </div>
@@ -46,7 +51,6 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-3 sticky-top" id="nav-container">
-
       <div class="container">
         <a class="navbar-brand" href="#">
           <button
@@ -68,44 +72,42 @@
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
+          style="width: 68%"
         >
-          <div class="offcanvas-header">
-            <div
-              class="nav nav-tabs mukti border-none bg-dark"
-              id="nav-tab"
-              role="tablist"
+          <div
+            class="nav nav-tabs mukti border-none bg-dark"
+            id="nav-tab"
+            role="tablist"
+          >
+            <a
+              class="nav-tab active bg-dark text-white p-2 px-3"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
             >
-              <a
-                class="nav-tab active bg-dark text-white p-2"
-                id="nav-home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-home"
-                type="button"
-                role="tab"
-                aria-controls="nav-home"
-                aria-selected="true"
-              >
-                CATEGORIES
-              </a>
+              CATEGORIES
+            </a>
 
-              <a
-                class="nav-tab bg-dark text-white p-2"
-                id="nav-profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-profile"
-                type="button"
-                role="tab"
-                aria-controls="nav-profile"
-                aria-selected="false"
-              >
-                MAIN MENU
-              </a>
-            </div>
+            <a
+              class="nav-tab bg-dark text-white p-2 px-3"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              MAIN MENU
+            </a>
           </div>
 
           <!-- Tab-content -->
           <div class="tab-content" id="nav-tabContent">
-
             <div
               class="tab-pane fade show active"
               id="nav-home"
@@ -138,7 +140,7 @@
               aria-labelledby="nav-profile-tab"
               tabindex="0"
             >
-               <ul class="list-group list-group-flush bg-dark mt-3">
+              <ul class="list-group list-group-flush bg-dark mt-3">
                 <li class="list-group-item bg-dark text-white">
                   <span class="fw-light">Home</span>
                 </li>
@@ -156,28 +158,10 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="tab-pane fade"
-              id="nav-contact"
-              role="tabpanel"
-              aria-labelledby="nav-contact-tab"
-              tabindex="0"
-            >
-              ...
-            </div>
-            <div
-              class="tab-pane fade"
-              id="nav-disabled"
-              role="tabpanel"
-              aria-labelledby="nav-disabled-tab"
-              tabindex="0"
-            >
-              ...
-            </div>
           </div>
         </div>
 
-        <form class="d-lg-block d-md-block d-none" role="search" style="width: 600px">
+        <form class="d-lg-block d-none" role="search" style="width: 600px">
           <div class="input-group">
             <input
               type="search"
@@ -207,27 +191,27 @@
           <div
             class="signup-section d-flex justify-content-center align-items-center text-white"
           >
-            <div class="sign-up">
+            <div class="sign-up d-lg-block d-none">
               <a href="" class="text-white fw-light p-2">
                 <i class="fa-solid fa-user"></i>
                 Sign In
               </a>
             </div>
-            <span class="delimiter"></span>
-            <div class="register fw-light p-2">
+            <span class="delimiter d-lg-block d-none"></span>
+            <div class="register fw-light p-2 d-lg-block d-none">
               <a href="" class="text-white"> Register</a>
             </div>
           </div>
 
           <!-- Border -->
-          <div class="border ms-2 mx-3 d-lg-block d-md-none d-sm-none"></div>
+          <div class="border ms-2 mx-3 d-lg-block d-none"></div>
           <!-- compare section -->
           <div
             class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
           >
-            <i class="fa-regular fa-heart text-white"></i>
+            <i class="fa-regular fa-heart text-white d-lg-block d-none"></i>
             <span
-              class="fw-light text-center text-white d-lg-block d-md-none d-sm-none"
+              class="fw-light text-center text-white d-lg-block d-none"
               style="font-size: 13px"
               >Wishlist</span
             >
@@ -236,9 +220,11 @@
           <div
             class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
           >
-            <i class="fa-solid fa-scale-balanced text-white"></i>
+            <i
+              class="fa-solid fa-scale-balanced text-white d-lg-block d-none"
+            ></i>
             <span
-              class="fw-light text-center text-white d-lg-block d-md-none d-sm-none"
+              class="fw-light text-center text-white d-lg-block d-none"
               style="font-size: 13px"
               >Compare</span
             >
@@ -249,7 +235,7 @@
           >
             <i class="fa-solid fa-bag-shopping text-white"></i>
             <span
-              class="fw-light text-center text-white d-lg-block d-md-none d-sm-none"
+              class="fw-light text-center text-white d-lg-block d-none"
               style="font-size: 13px"
               >Cart</span
             >
@@ -469,14 +455,14 @@
     <!-- Splider Image -->
     <div class="container mt-3">
       <div class="row">
-        <div class="col-9">
-          <div class="splide">
+        <div class="col-lg-9 col-sm-12">
+          <div class="splide" id="first-splide">
             <div class="splide__slider">
               <div class="splide__track">
                 <ul class="splide__list">
                   <li
                     class="splide__slide slider-img"
-                    style="min-height: 500px"
+                    style="min-height: 530px"
                   >
                     <img
                       class="rounded-3 img-fluid h-100"
@@ -484,28 +470,28 @@
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide" style="min-height: 500px">
+                  <li class="splide__slide" style="min-height: 530px">
                     <img
                       class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 46.webp"
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide" style="min-height: 500px">
+                  <li class="splide__slide" style="min-height: 530px">
                     <img
                       class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 47.webp"
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide" style="min-height: 500px">
+                  <li class="splide__slide" style="min-height: 530px">
                     <img
                       class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 48.jpeg"
                       alt=""
                     />
                   </li>
-                  <li class="splide__slide" style="min-height: 500px">
+                  <li class="splide__slide" style="min-height: 530px">
                     <img
                       class="rounded-3 img-fluid h-100"
                       src="./assets/assets/asset 49.webp"
@@ -520,7 +506,7 @@
 
         <!-- Splider Right-side -->
 
-        <div class="col-3">
+        <div class="col-lg-3 col-sm-none">
           <div class="d-flex flex-column gap-3">
             <div class="sidebar-1">
               <img
@@ -559,7 +545,7 @@
     </div>
 
     <!-- Splider multiple-image -->
-    <div class="container border border-light-subtle p-3">
+    <div class="container border rounded-2 border-light-subtle p-2">
       <div class="splide" id="icon-slider">
         <div class="splide__slider">
           <div class="splide__track">
@@ -619,7 +605,7 @@
       <div class="advertise-img">
         <img
           class="w-100 img-fluid"
-          src="https://s3.ap-southeast-1.amazonaws.com/images.othoba.com/Content/Images/HomepageGIF/Janweb.gif"
+          src=" https://s3.ap-southeast-1.amazonaws.com/images.othoba.com/Content/Images/HomepageGIF/valentine-gif-web.gif"
           alt=""
         />
       </div>
@@ -685,7 +671,7 @@
       </div>
     </div>
 
-    <!-- Deal-title-container -->
+    <!--Tittle-container  -->
     <div class="container">
       <div class="title-container d-flex justify-content-between py-4">
         <div class="">
@@ -698,243 +684,563 @@
       </div>
     </div>
 
-    <!-- Product splider -->
-    <section
-      class="splide container"
-      aria-label="Slide Container Example"
-      id="product"
-    >
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="splide_slide_container p-2 border border-info rounded">
-              <div class="row">
-                <div class="col-6">
-                  <div class="product-img">
-                    <img
-                      src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="product-content mt-5">
-                    <div class="product-title pb-2">
-                      <a class="">
-                        Most Demanding pendant For Girls and Women
-                      </a>
-                    </div>
-                    <div class="product-popularity d-flex">
-                      <div class="product-rating">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <div class="product-review ps-2">
-                        <span>(0 Reviews)</span>
-                      </div>
-                    </div>
-                    <div class="product-price d-flex mt-2">
-                      <div class="product-amount">
-                        <h5>Tk 183</h5>
-                      </div>
-                      <span class="text-decoration-line-through ps-3 fw-light"
-                        >TK 290</span
+    <!-- Hot deals product -->
+    <section class="hot-deals mt-60">
+      <div class="container">
+        <div class="splide" id="hot-deals-day">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <section class="hot-deals">
+                    <div class="hot-deals-card">
+                      <div
+                        class="border border-primary-subtle border-1 rounded-2 p-2"
                       >
-                    </div>
-                    <div class="product-buy d-flex align-items-center">
-                      <a
-                        href="#"
-                        class="btn btn-sm btn-outline-dark d-inline-flex align-items-center justify-content-center px-5 py-2 mt-3"
-                      >
-                        <i class="fa-solid fa-bag-shopping fs-4"></i>
-                        <span class="ms-2 fs-6">BUY NOW</span>
-                      </a>
-                      <div class="product-icon mt-3 px-3">
-                        <i class="fa-regular fa-heart hover"></i>
-                        <i class="fa-solid fa-scale-balanced ms-3 hover"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="splide_slide_container border border-info rounded p-2">
-              <div class="row">
-                <div class="col-6">
-                  <div class="product-img">
-                    <img
-                      src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div
-                    class="product-content d-flex-columnn justify-content-center align-items-center"
-                  >
-                    <div class="product-title">
-                      <a> Most Demanding pendant For Girls and Women </a>
-                    </div>
-                    <div class="product-popularity d-flex">
-                      <div class="product-rating">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <div class="product-review ps-2">
-                        <span>(0 Reviews)</span>
-                      </div>
-                    </div>
-                    <div class="product-price d-flex mt-2">
-                      <div class="product-amount">
-                        <h5>Tk 183</h5>
-                      </div>
-                      <span class="text-decoration-line-through ps-3 fw-light"
-                        >TK 290</span
-                      >
-                    </div>
-                    <div class="product-buy d-flex align-items-center">
-                      <a
-                        href="#"
-                        class="btn btn-sm btn-outline-dark d-inline-flex align-items-center justify-content-center px-5 py-2 mt-3"
-                      >
-                        <i class="fa-solid fa-bag-shopping fs-4"></i>
-                        <span class="ms-2 fs-6">BUY NOW</span>
-                      </a>
-                      <div class="product-icon mt-3 px-3">
-                        <i class="fa-regular fa-heart hover"></i>
-                        <i class="fa-solid fa-scale-balanced ms-3 hover"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
+                        <div class="row">
+                          <div class="col-lg-6 col-sm-12">
+                            <!--timer-->
+                            <div
+                              class="countdown d-flex justify-content-center"
+                              id="demo"
+                            >
+                              <div class="timer-container d-flex gap-3">
+                                <div class="timer-D">
+                                  <span id="countdownDays"></span>
+                                  <div>Days</div>
+                                </div>
 
-          <li class="splide__slide">
-            <div class="splide_slide_container">
-              <div class="row">
-                <div class="col-6">
-                  <div class="product-img">
-                    <img
-                      src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div
-                    class="product-content d-flex-columnn justify-content-center align-items-center"
-                  >
-                    <div class="product-title">
-                      <a> Most Demanding pendant For Girls and Women </a>
-                    </div>
-                    <div class="product-popularity d-flex">
-                      <div class="product-rating">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <div class="product-review ps-2">
-                        <span>(0 Reviews)</span>
-                      </div>
-                    </div>
-                    <div class="product-price d-flex mt-2">
-                      <div class="product-amount">
-                        <h5>Tk 183</h5>
-                      </div>
-                      <span class="text-decoration-line-through ps-3 fw-light"
-                        >TK 290</span
-                      >
-                    </div>
-                    <div class="product-buy d-flex align-items-center">
-                      <a
-                        href="#"
-                        class="btn btn-sm btn-outline-dark d-inline-flex align-items-center justify-content-center px-5 py-2 mt-3"
-                      >
-                        <i class="fa-solid fa-bag-shopping fs-4"></i>
-                        <span class="ms-2 fs-6">BUY NOW</span>
-                      </a>
-                      <div class="product-icon mt-3 px-3">
-                        <i class="fa-regular fa-heart hover"></i>
-                        <i class="fa-solid fa-scale-balanced ms-3 hover"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
+                                <div class="timer-H">
+                                  <span id="countdownHours"></span>
+                                  <div>Hrs</div>
+                                </div>
 
-          <li class="splide__slide">
-            <div class="splide_slide_container">
-              <div class="row">
-                <div class="col-6">
-                  <div class="product-img">
-                    <img
-                      src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
-                      alt=""
-                    />
-                  </div>
+                                <div class="timer-M">
+                                  <span id="countdownMins"></span>
+                                  <div>Mins</div>
+                                </div>
+
+                                <div class="timer-S">
+                                  <div id="countdownSecs"></div>
+                                  <div>Secs</div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--timer-->
+                            <img
+                              src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <div class="hot-deals-c">
+                              <a href="" class="hot-deals-card-title">
+                                Most Demanding Pedant for Girls and Women
+                              </a>
+                              <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <a href="" class="reviews-count">
+                                  (0 Reviews)
+                                </a>
+                              </div>
+                              <div class="price">
+                                <span class="new-price p-1">Tk 111</span>
+                                <span class="old-price fw-light"
+                                  ><s>Tk300</s></span
+                                >
+                              </div>
+
+                              <a href="" class="card-icon">
+                                <div
+                                  class="btn btn-outline-dark btn-lg me-1 rounded-0 px-4 d-lg-block d-none"
+                                >
+                                  <i class="fa-solid fa-bag-shopping"></i>
+                                  <span class="px-3">BUY NOW</span>
+                                </div>
+
+                                <span class="icon1-color ms-3">
+                                  <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="icon2-color ms-3">
+                                  <i class="fa-solid fa-scale-balanced"></i>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <div class="col-6">
-                  <div
-                    class="product-content d-flex-columnn justify-content-center align-items-center"
-                  >
-                    <div class="product-title">
-                      <a> Most Demanding pendant For Girls and Women </a>
-                    </div>
-                    <div class="product-popularity d-flex">
-                      <div class="product-rating">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <div class="product-review ps-2">
-                        <span>(0 Reviews)</span>
-                      </div>
-                    </div>
-                    <div class="product-price d-flex mt-2">
-                      <div class="product-amount">
-                        <h5>Tk 183</h5>
-                      </div>
-                      <span class="text-decoration-line-through ps-3 fw-light"
-                        >TK 290</span
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <section class="hot-deals">
+                    <div class="hot-deals-card">
+                      <div
+                        class="border border-primary-subtle border-1 rounded-2 p-2"
                       >
-                    </div>
-                    <div class="product-buy d-flex align-items-center">
-                      <a
-                        href="#"
-                        class="btn btn-sm btn-outline-dark d-inline-flex align-items-center justify-content-center px-5 py-2 mt-3"
-                      >
-                        <i class="fa-solid fa-bag-shopping fs-4"></i>
-                        <span class="ms-2 fs-6">BUY NOW</span>
-                      </a>
-                      <div class="product-icon mt-3 px-3">
-                        <i class="fa-regular fa-heart hover"></i>
-                        <i class="fa-solid fa-scale-balanced ms-3 hover"></i>
+                        <div class="row">
+                          <div class="col-lg-6 col-sm-12">
+                            <!--timer-->
+                            <div
+                              class="countdown d-flex justify-content-center"
+                              id="demo"
+                            >
+                              <div class="timer-container d-flex gap-3">
+                                <div class="timer-D">
+                                  <span id="countdownDays2"></span>
+                                  <div>Days</div>
+                                </div>
+
+                                <div class="timer-H">
+                                  <span id="countdownHours2"></span>
+                                  <div>Hrs</div>
+                                </div>
+
+                                <div class="timer-M">
+                                  <span id="countdownMins2"></span>
+                                  <div>Mins</div>
+                                </div>
+
+                                <div class="timer-S">
+                                  <div id="countdownSecs2"></div>
+                                  <div>Secs</div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--timer-->
+                            <img
+                              src="./assets/assets/axe-brand-universal-oil-10ml_300.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <div class="hot-deals-c">
+                              <a href="" class="hot-deals-card-title">
+                                Most Demanding Pedant for Girls and Women
+                              </a>
+                              <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <a href="" class="reviews-count">
+                                  (0 Reviews)
+                                </a>
+                              </div>
+                              <div class="price">
+                                <span class="new-price p-1">Tk 105</span>
+                                <span class="old-price fw-light"
+                                  ><s>Tk 250</s></span
+                                >
+                              </div>
+                              <a href="" class="card-icon">
+                                <div
+                                  class="btn btn-outline-dark btn-lg me-1 rounded-0 px-4 d-lg-block d-none"
+                                >
+                                  <i class="fa-solid fa-bag-shopping"></i>
+                                  <span class="px-3">BUY NOW</span>
+                                </div>
+                                <span class="icon1-color ms-3">
+                                  <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="icon2-color ms-3">
+                                  <i class="fa-solid fa-scale-balanced"></i>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </section>
                 </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <section class="hot-deals">
+                    <div class="hot-deals-card">
+                      <div
+                        class="border border-primary-subtle border-1 rounded-2 p-2"
+                      >
+                        <div class="row">
+                          <div class="col-lg-6 col-sm-12">
+                            <!--timer-->
+                            <div
+                              class="countdown d-flex justify-content-center"
+                              id="demo"
+                            >
+                              <div class="timer-container d-flex gap-3">
+                                <div class="timer-D">
+                                  <span id="countdownDays3"></span>
+                                  <div>Days</div>
+                                </div>
+
+                                <div class="timer-H">
+                                  <span id="countdownHours3"></span>
+                                  <div>Hrs</div>
+                                </div>
+
+                                <div class="timer-M">
+                                  <span id="countdownMins3"></span>
+                                  <div>Mins</div>
+                                </div>
+
+                                <div class="timer-S">
+                                  <div id="countdownSecs3"></div>
+                                  <div>Secs</div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--timer-->
+                            <img src="./assets/assets/shampoo.webp" alt="" />
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <div class="hot-deals-c">
+                              <a href="" class="hot-deals-card-title">
+                                Stone Finger Rings for Women and
+                                Girls(Imported)(M-FRC2023)-1Pcs
+                              </a>
+                              <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <a href="" class="reviews-count">
+                                  (0 Reviews)
+                                </a>
+                              </div>
+                              <div class="price">
+                                <span class="new-price p-1">Tk 274</span>
+                                <span class="old-price"><s>Tk 350</s></span>
+                              </div>
+                              <a href="" class="card-icon">
+                                <div
+                                  class="btn btn-outline-dark btn-lg me-1 rounded-0 px-4 d-lg-block d-none"
+                                >
+                                  <i class="fa-solid fa-bag-shopping"></i>
+                                  <span class="px-3">BUY NOW</span>
+                                </div>
+                                <span class="icon1-color ms-3">
+                                  <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="icon2-color ms-3">
+                                  <i class="fa-solid fa-scale-balanced"></i>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <section class="hot-deals">
+                    <div class="hot-deals-card">
+                      <div
+                        class="border border-primary-subtle border-1 rounded-2 p-2"
+                      >
+                        <div class="row">
+                          <div class="col-lg-6 col-sm-12">
+                            <!--timer-->
+                            <div
+                              class="countdown d-flex justify-content-center"
+                              id="demo"
+                            >
+                              <div class="timer-container d-flex gap-3">
+                                <div class="timer-D">
+                                  <span id="countdownDays4"></span>
+                                  <div>Days</div>
+                                </div>
+
+                                <div class="timer-H">
+                                  <span id="countdownHours4"></span>
+                                  <div>Hrs</div>
+                                </div>
+
+                                <div class="timer-M">
+                                  <span id="countdownMins4"></span>
+                                  <div>Mins</div>
+                                </div>
+
+                                <div class="timer-S">
+                                  <div id="countdownSecs4"></div>
+                                  <div>Secs</div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--timer-->
+                            <img
+                              src="./assets/assets/golden-celebrity-pearl-handle-based-bag-for-girls-and-women_300.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <div class="hot-deals-c">
+                              <a href="" class="hot-deals-card-title">
+                                Valentine Couple Rings with Box for Women and
+                                Men-2Pcs(Grade-1)
+                              </a>
+                              <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <a href="" class="reviews-count">
+                                  (0 Reviews)
+                                </a>
+                              </div>
+                              <div class="price">
+                                <span class="new-price p-1">Tk 250</span>
+                                <span class="old-price"><s>Tk 400</s></span>
+                              </div>
+                              <a href="" class="card-icon">
+                                <div
+                                  class="btn btn-outline-dark btn-lg me-1 rounded-0 px-4 d-lg-block d-none"
+                                >
+                                  <i class="fa-solid fa-bag-shopping"></i>
+                                  <span class="px-3">BUY NOW</span>
+                                </div>
+                                <span class="icon1-color ms-3">
+                                  <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="icon2-color ms-3">
+                                  <i class="fa-solid fa-scale-balanced"></i>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Multiple product image  after hot deals use splid-->
+    <div class="mt-5">
+      <div class="container">
+        <section
+          class="splide"
+          aria-label="Basic Structure Example"
+          id="afterhotdealsplide"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="grocery-box d-flex align-items-center gap-2 py-2">
+                  <div class="grocery-img">
+                    <img
+                      class=""
+                      src="./assets/assets/small-squre-bag-collection-for-girls-and-women_100.webp"
+                      alt=""
+                      width="200px"
+                    />
+                  </div>
+                  <div class="grocery-details">
+                    <div class="grocery-content fw-light">
+                      <a class=""
+                        >small Square Bag Collection For Girls and Women</a
+                      >
+                    </div>
+                    <div class="grocery-rating pt-2">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="grocery-price">
+                      Tk 676
+                      <span
+                        class="text-decoration-line-through fw-light fs-6 px-1"
+                        >TK 1300</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grocery-box d-flex align-items-center gap-2 py-2">
+                  <div class="grocery-img">
+                    <img
+                      src="./assets/assets/vita-b3-source_100.jpeg"
+                      alt=""
+                      width="200px"
+                    />
+                  </div>
+                  <div class="grocery-details">
+                    <div class="grocery-content fw-light">
+                      <a class=""
+                        >small Square Bag Collection For Girls and Women</a
+                      >
+                    </div>
+                    <div class="grocery-rating pt-2">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="grocery-price">
+                      Tk 676
+                      <span
+                        class="text-decoration-line-through fw-light fs-6 px-1"
+                        >TK 1300</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="grocery-box d-flex align-items-center gap-2 py-2">
+                  <div class="grocery-img">
+                    <img
+                      class=""
+                      src="./assets/assets/velvet-texture-lipstick-easy-to-carry-_100.webp"
+                      alt=""
+                      width="200px"
+                    />
+                  </div>
+                  <div class="grocery-details">
+                    <div class="grocery-content fw-light">
+                      <a class=""
+                        >small Square Bag Collection For Girls and Women</a
+                      >
+                    </div>
+                    <div class="grocery-rating pt-2">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="grocery-price">
+                      Tk 676
+                      <span
+                        class="text-decoration-line-through fw-light fs-6 px-1"
+                        >TK 1300</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grocery-box d-flex align-items-center gap-2 py-2">
+                  <div class="grocery-img">
+                    <img
+                      src="./assets/assets/most-beautiful-hair-clip-for-babys_100.webp"
+                      alt=""
+                      width="200px"
+                    />
+                  </div>
+                  <div class="grocery-details">
+                    <div class="grocery-content fw-light">
+                      <a class=""
+                        >small Square Bag Collection For Girls and Women</a
+                      >
+                    </div>
+                    <div class="grocery-rating pt-2">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="grocery-price">
+                      Tk 676
+                      <span
+                        class="text-decoration-line-through fw-light fs-6 px-1"
+                        >TK 1300</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="grocery-box d-flex align-items-center gap-2 py-2">
+                  <div class="grocery-img">
+                    <img
+                      class=""
+                      src="./assets/assets/sheuly-sanitary-napkin-belt-10-pads_100.jpeg"
+                      alt=""
+                      width="200px"
+                    />
+                  </div>
+                  <div class="grocery-details">
+                    <div class="grocery-content fw-light">
+                      <a class=""
+                        >small Square Bag Collection For Girls and Women</a
+                      >
+                    </div>
+                    <div class="grocery-rating pt-2">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="grocery-price">
+                      Tk 676
+                      <span
+                        class="text-decoration-line-through fw-light fs-6 px-1"
+                        >TK 1300</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grocery-box d-flex align-items-center gap-2 py-2">
+                  <div class="grocery-img">
+                    <img
+                      src="./assets/assets/pcs-hair-clips-for-girls-and-women_100.webp"
+                      alt=""
+                      width="200px"
+                    />
+                  </div>
+                  <div class="grocery-details">
+                    <div class="grocery-content fw-light">
+                      <a class=""
+                        >small Square Bag Collection For Girls and Women</a
+                      >
+                    </div>
+                    <div class="grocery-rating pt-2">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="grocery-price">
+                      Tk 676
+                      <span
+                        class="text-decoration-line-through fw-light fs-6 px-1"
+                        >TK 1300</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
 
     <!-- Desert-item show -->
     <div class="container">
@@ -943,8 +1249,8 @@
           <ul class="splide__list">
             <li class="splide__slide">
               <div class="splide_slide_container">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
+                <div class="card-box mt-3">
+                  <div class="card">
                     <img
                       src="./assets/assets/cake.jpeg"
                       class="card-img-top"
@@ -952,7 +1258,7 @@
                     />
                     <div class="card-body">
                       <div
-                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                        class="title d-inline-flex align-items-center w-100 justify-content-between"
                       >
                         <a class="card-title fw-light font"
                           >Cheery Cake 500gm</a
@@ -990,8 +1296,8 @@
             </li>
             <li class="splide__slide">
               <div class="splide_slide_container">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
+                <div class="card-box mt-3">
+                  <div class="card">
                     <img
                       src="./assets/assets/cake-2-500gm_300.jpeg"
                       class="card-img-top"
@@ -1038,8 +1344,8 @@
 
             <li class="splide__slide">
               <div class="splide_slide_container">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
+                <div class="card-box mt-3">
+                  <div class="card">
                     <img
                       src="./assets/assets/cake-3.jpeg"
                       class="card-img-top"
@@ -1047,7 +1353,7 @@
                     />
                     <div class="card-body">
                       <div
-                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                        class="title d-inline-flex align-items-center w-100 justify-content-between"
                       >
                         <a class="card-title fw-light font"
                           >Cheery Cake 500gm</a
@@ -1086,8 +1392,8 @@
 
             <li class="splide__slide">
               <div class="splide_slide_container">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
+                <div class="card-box mt-3">
+                  <div class="card">
                     <img
                       src="./assets/assets/chicken-curry-puff_300.jpeg"
                       class="card-img-top"
@@ -1095,7 +1401,7 @@
                     />
                     <div class="card-body">
                       <div
-                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                        class="title d-inline-flex align-items-center w-100 justify-content-between"
                       >
                         <a class="card-title fw-light font"
                           >Cheery Cake 500gm</a
@@ -1134,8 +1440,8 @@
 
             <li class="splide__slide">
               <div class="splide_slide_container">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
+                <div class="card-box mt-3">
+                  <div class="card">
                     <img
                       src="./assets/assets/mexican-club-burger.webp"
                       class="card-img-top"
@@ -1143,7 +1449,7 @@
                     />
                     <div class="card-body">
                       <div
-                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                        class="title d-inline-flex align-items-center w-100 justify-content-between"
                       >
                         <a class="card-title fw-light font"
                           >Cheery Cake 500gm</a
@@ -1196,80 +1502,81 @@
     </div>
 
     <!-- Recommended section use navs and tabs -->
-    <div class="container">
-      <div class="nav-box">
-        <div class="row justify-content-center text-center">
-          <div class="heading p-4">
-            <h4>Recommended For You</h4>
-          </div>
-          <div class="tabs-nav">
-            <ul
-              class="nav nav-pills mb-3 justify-content-center nav-underline"
-              id="pills-tab"
-              role="tablist"
-            >
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="pills-home-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-home"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-home"
-                  aria-selected="true"
-                >
-                  Best Seller
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false"
-                >
-                  New Arrivals
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  Top Rated
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-disabled-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-disabled"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-disabled"
-                  aria-selected="false"
-                  disabled
-                >
-                  Featured
-                </button>
-              </li>
-            </ul>
+    <section class="recommend mt-3">
+      <div class="container">
+        <div class="nav-box">
+          <div class="row justify-content-center text-center">
+            <div class="heading py-3">
+              <h4 style="font-size: 22px">Recommended For You</h4>
+            </div>
+            <div class="tabs-nav">
+              <ul
+                class="nav mb-3 justify-content-center"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Best Seller
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    New Arrivals
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Top Rated
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-featured-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-featured"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-featured"
+                    aria-selected="false"
+                  >
+                    Featured
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- tab-section -->
     <div class="container tab-content" id="pills-tabContent">
       <div
@@ -1283,10 +1590,10 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
+                <div class="card-box">
+                  <div class="card">
                     <img
-                      src="./assets/assets/cake-2-500gm_300.jpeg"
+                      src="./assets/assets/farm-egg-30pcs-combo_300.jpeg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -1295,8 +1602,104 @@
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
                       >
                         <a class="card-title fw-light font"
-                          >Cheery Cake 500gm</a
+                          >Farm egg 30pcs combo</a
                         >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 360</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 450
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box">
+                  <div class="card">
+                    <img
+                      src="./assets/assets/diploma-ifcmp-200gm_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Farm egg 30pcs combo</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 360</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 450
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box">
+                  <div class="card">
+                    <div class="card-img-juice">
+                      <img
+                        src="./assets/assets/aktive-plus-electrolyte-lemon-drink-200ml_300.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-img-offer">
+                        <img
+                          src="./assets/assets/active-juiceb1g1.webp"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light">Cheery Cake 500gm</a>
                         <i class="fa-solid fa-heart d-block"></i>
                       </div>
                       <div class="card-text">
@@ -1328,58 +1731,22 @@
                 </div>
               </li>
               <li class="splide__slide">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./assets/assets/cake-3.jpeg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div
-                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
-                      >
-                        <a class="card-title fw-light font"
-                          >Cheery Cake 500gm</a
-                        >
-                        <i class="fa-solid fa-heart d-block"></i>
-                      </div>
-                      <div class="card-text">
-                        <div class="product-popularity d-flex">
-                          <div class="product-rating-desert">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                          </div>
-                          <div class="product-review-desert ps-2">
-                            <span>(0 Reviews)</span>
-                          </div>
-                        </div>
-                        <div class="product-price-desert d-flex mt-2">
-                          <div class="product-amount-desert">
-                            <h5>Tk 760</h5>
-                          </div>
-                          <h5
-                            class="text-decoration-line-through ps-1 fw-light discount"
-                          >
-                            TK 850
-                          </h5>
-                        </div>
+                <div class="card-box">
+                  <div class="card">
+                    <div class="card-img-drinko">
+                      <img
+                        src="./assets/assets/drinko-float-250-ml-litchi_300.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-img-offer">
+                        <img
+                          src="./assets/assets/drinko-offer.webp"
+                          alt=""
+                          width="110px"
+                        />
                       </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./assets/assets/chicken-curry-puff_300.jpeg"
-                      class="card-img-top"
-                      alt="..."
-                    />
                     <div class="card-body">
                       <div
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
@@ -1421,17 +1788,27 @@
           </div>
         </div>
 
+        <!-- margin -->
+        <div class="mt-3"></div>
+
         <div class="splide" aria-label="Basic Structure Example" id="tabitem-2">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./assets/assets/chicken-curry-puff_300.jpeg"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                <div class="card-box">
+                  <div class="card">
+                    <div class="card-img-milk">
+                      <img
+                        src="./assets/assets/pran-full-cream-milk-powder-500gm_300.jpeg"
+                        alt=""
+                      />
+                      <div class="card-offer-percent">
+                        <img
+                          src="./assets/assets/percentage-perfect.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                     <div class="card-body">
                       <div
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
@@ -1470,13 +1847,18 @@
                 </div>
               </li>
               <li class="splide__slide">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./assets/assets/chicken-curry-puff_300.jpeg"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                <div class="card-box">
+                  <div class="card">
+                    <div class="card-img-porata">
+                      <img
+                        src="./assets/assets/porata.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-img-offer">
+                        <img src="./assets/assets/porata-offer.webp" alt="" />
+                      </div>
+                    </div>
                     <div class="card-body">
                       <div
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
@@ -1515,13 +1897,65 @@
                 </div>
               </li>
               <li class="splide__slide">
-                <div class="card-box mt-5">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./assets/assets/chicken-curry-puff_300.jpeg"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                <div class="card-box">
+                  <div class="card">
+                    <div class="card-img-milk">
+                      <img
+                        src="./assets/assets/goodlife-pasteurized-milk-1000ml_300.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-offer-percent">
+                        <img src="./assets/assets/percentage-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box">
+                  <div class="card">
+                    <div class="card-img-milk">
+                      <img
+                        src="./assets/assets/mr-noodles-12-pcs-family-pack-masala-62gm-x-12pcs_300.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
                     <div class="card-body">
                       <div
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
@@ -1580,11 +2014,19 @@
               <li class="splide__slide">
                 <div class="card-box mt-5">
                   <div class="card" style="width: 18rem">
-                    <img
-                      src="./assets/assets/chicken-curry-puff_300.jpeg"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                    <div class="card-img-pant">
+                      <img
+                        src="./assets/assets/pant-2.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-offer-percent">
+                        <img
+                          src="./assets/assets/percentage-perfect.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                     <div class="card-body">
                       <div
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
@@ -1625,11 +2067,16 @@
               <li class="splide__slide">
                 <div class="card-box mt-5">
                   <div class="card" style="width: 18rem">
-                    <img
-                      src="./assets/assets/chicken-curry-puff_300.jpeg"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                    <div class="card-img-clock">
+                      <img
+                        src="./assets/assets/clock-main.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-offer-percent-clock">
+                        <img src="./assets/assets/percentage-2.png" alt="" />
+                      </div>
+                    </div>
                     <div class="card-body">
                       <div
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
@@ -1873,21 +2320,28 @@
       </div>
       <div
         class="tab-pane fade"
-        id="pills-disabled"
+        id="pills-featured"
         role="tabpanel"
-        aria-labelledby="pills-disabled-tab"
+        aria-labelledby="pills-featured-tab"
         tabindex="0"
       >
         ...
       </div>
     </div>
+    <!-- Tab section end -->
 
     <!-- Banner -->
     <div class="container mt-5">
       <div class="banner-image rounded">
         <div class="row">
           <div class="col-lg-4">
-            <img class="" src="./assets/assets/banner_App--Image.webp" alt="" />
+            <div class="advertice-girl d-lg-block d-none">
+              <img
+                class=""
+                src="./assets/assets/banner_App--Image.webp"
+                alt=""
+              />
+            </div>
           </div>
 
           <div class="col-lg-5 text-center m-auto">
@@ -2158,6 +2612,7 @@
     <div class="container mp-title-container p-3">
       <h3>Most Popular Brands</h3>
     </div>
+    <!-- popular brand splide -->
     <div
       class="container most-popular-container-main border border-2 rounded-2 p-4 mb-2"
     >
@@ -2260,13 +2715,13 @@
     </div>
 
     <!-- Subscribe and download container -->
-    <div class="subscribe-container">
+    <div class="subscribe-container py-3">
       <div class="container">
         <div class="row">
           <div class="col-lg-5">
-            <div class="icon-box text-white mt-5">
+            <div class="icon-box text-white mt-3">
               <div class="icon-box-img">
-                <i class="fa-regular fa-envelope icon"></i>
+                <i class="fa-regular fa-envelope icon msg-icon"></i>
               </div>
               <div class="icon-content mt-2">
                 <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
@@ -2278,14 +2733,14 @@
           </div>
 
           <div class="col-lg-7">
-            <div class="icon-box-right mt-5 text-white">
+            <div class="icon-box-right mt-3 text-white">
               <div class="icon-content">
                 <h4>DOWNLOAD OUR NEW APP TODAY</h4>
                 <p>
                   Dont Miss our mobile-only offers and shop with Android Play.
                 </p>
               </div>
-              <a class="btn btn-primary border py-2 px-4 ms-4" href=""
+              <a class="btn btn-primary border py-2 px-4 ms-4 mb-3" href=""
                 >Download
                 <i class="fa-solid fa-arrow-down"></i>
               </a>
@@ -2357,7 +2812,12 @@
               viewBox="0 0 102 94"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              style="color: #04da8d; width: 2rem; height: 1.5rem"
+              style="
+                color: #04da8d;
+                width: 17px;
+                height: 1.5rem;
+                margin-bottom: 9px;
+              "
             >
               <path
                 fill-rule="evenodd"
@@ -2523,6 +2983,7 @@
                 class="img-fluid"
                 src="./assets/assets/payment.png"
                 alt=""
+                9
                 width="250"
                 height="25"
               />
@@ -2533,6 +2994,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/hot-deals-timmer.js"></script>
     <script src="./js/splide.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>

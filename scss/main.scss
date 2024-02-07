@@ -1,7 +1,8 @@
+@import "./component/responsive";
 @import "./component/category";
+@import "./base/genaral";
 @import "./component/icon-section";
 @import "./base/var";
-@import "./component/title-bar";
 @import "./base/genaral";
 @import "./component/prduct-splider";
 @import "./component/desert-item";
@@ -11,7 +12,8 @@
 @import "./component/mostpopular-product";
 @import "./base/genaral";
 @import "./component/nav-bar";
-
- 
-
-
+@import "./component/grocery";
+@import "./component/first-splider";
+@import "./component/recommend";
+@import "./component/recommend-tab";
+@import "./component/hotdeals-product";

@@ -1,3 +1,30 @@
 .splide__pagination__page {
+
     bottom: -40px;
+}
+
+
+
+
+
+ 
+#weekly-brand .splide__pagination__page.is-active {
+ background-color: #439ddf;
+ width: 14px;
+ height: 7px;
+ border: 1px;
+ border-radius: 5px;
+}
+
+
+#first-splide .splide__pagination__page.is-active {
+ background-color: #439ddf;
+ width: 14px;
+ height: 7px;
+ border: 1px;
+ border-radius: 5px;
+}
+#first-splide .splide__pagination__page{
+    margin-left: 10px;
+    padding: 5px;
 }

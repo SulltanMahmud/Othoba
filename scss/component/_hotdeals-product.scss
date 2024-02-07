@@ -1,0 +1,59 @@
+.hot-deals-c{
+   @include sm{
+    margin-top: 10px;
+   }
+
+   .hot-deals-card-title{
+    @include sm{
+       font-size: 15px;
+    }
+   }
+
+   .rating{
+    @include sm{
+      font-size: 10px;
+    }
+   }
+
+   .new-price{
+    font-size: 23px;
+    @include sm{
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+   }
+}
+
+ 
+#demo {
+  // border: 2px solid red;
+  position:absolute;
+  width:43%; 
+  // top:75%;
+  top:65%;
+  @include sm{
+    top:42%;
+     
+  }
+  margin-left: 15px;
+  padding: 18px;
+  color:white;
+  background-color: #373636d2;
+  text-align: center;
+
+  @include sm{
+    width: 75%;
+  }
+  // opacity: 2;
+}
+
+
+.countdown {
+  transition: visibility 0.5s ease;
+  opacity: 1;
+}
+.countdown:hover {
+  visibility: hidden;
+  opacity: 0;
+}

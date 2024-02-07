@@ -1,33 +1,63 @@
-var splide = new Splide(".splide", {
+// First slide
+var splide = new Splide("#first-splide", {
   type: "loop",
   perPage: 1,
   autoplay: true,
   arrows: false,
+  interval: 2000,
+
+   
 });
 
+
 splide.mount();
+
+// hot deals Product splide
+
+ 
+
+// After hot deals splide img 
+
+ 
+
+const afterhotdealsplide = new Splide("#afterhotdealsplide", {
+  arrows: false,
+  pagination: false,
+  type: "loop",
+  perPage: 4,
+  // gap:20,
+  perMove: 1,
+  autoplay: true,
+  interval: 2000,
+  breakpoints: {
+    576: {
+       perPage:1,
+      
+    },
+  },
+});
+   
+
+afterhotdealsplide.mount();
+ 
+
 
 const splide2 = new Splide("#icon-slider", {
   arrows: false,
   pagination: false,
   perPage: 4,
-});
-splide2.mount();
 
-const hotDealsSplide = new Splide("#product", {
-  arrows: false,
-  pagination: false,
-  type: "loop",
-  perPage: 2,
-  autoplay: true,
-  interval: 2000,
   breakpoints: {
-    640: {
-      height: "6rem",
+    576: {
+       perPage:1,
+      
     },
   },
 });
-hotDealsSplide.mount();
+splide2.mount();
+
+ 
+
 
 const desert = new Splide("#desert", {
   arrows: false,
@@ -36,9 +66,13 @@ const desert = new Splide("#desert", {
   perPage: 4,
   autoplay: true,
   interval: 2000,
+  gap: 10,
+  perMove: 1,
   breakpoints: {
-    640: {
-      height: "6rem",
+    576: {
+      perPage: 2,
+      gap: 10,
+      perMove: 1,
     },
   },
 });
@@ -48,9 +82,11 @@ const tabitem = new Splide("#tabitem", {
   arrows: false,
   pagination: false,
   type: "loop",
-  perPage: 4,
+  perPage: 5,
   autoplay: true,
   interval: 2000,
+  gap:10,
+ 
   breakpoints: {
     640: {
       height: "6rem",
@@ -64,9 +100,10 @@ const tabitem2 = new Splide("#tabitem-2", {
   arrows: false,
   pagination: false,
   type: "loop",
-  perPage: 4,
+  perPage: 5,
   autoplay: true,
   interval: 2000,
+  gap: 10,
 
   breakpoints: {
     640: {
@@ -123,15 +160,17 @@ const mostPopularSplide = new Splide("#most-popular", {
 });
 mostPopularSplide.mount();
 
-// weekly brands
+// Top weekly
 const weeklybrand = new Splide("#weekly-brand", {
   arrows: false,
   pagination: true,
   type: "loop",
   perPage: 4,
+  perMove:1,
   autoplay: true,
-  interval: 4000,
-  gap : 10
+  interval: 2000,
+  gap : 10,
+  focus: "center",
 });
 weeklybrand.mount();
 
@@ -154,4 +193,25 @@ weeklybrand.mount();
      scrolled = false;
    }
  };
+
+
+//  Grocery product
+const grocery = new Splide("#grocery", {
+  arrows: false,
+  pagination: false,
+  type:"loop",
+  perPage: 4,
+  autoplay: true,
+  interval: 4000,
+  gap:20,
+});
+grocery.mount();
+
+
+ 
+
+
+
+
+ 
 

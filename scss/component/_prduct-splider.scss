@@ -26,6 +26,22 @@
 
     &-title a:hover{
         color:#4c87fc;
+        
+    }
+
+    &-img{
+        position: relative;
+
+        .launch-container{
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+            background-color: rgba(128, 128, 128, 0.438);
+            width: 280px;
+             
+        }
+
+
     }
 
      
