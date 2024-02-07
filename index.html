@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,6 +43,220 @@
         </div>
       </div>
     </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-3 sticky-top" id="nav-container">
+
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="./assets/assets/asset 0.png" alt="" />
+        </a>
+
+        <!-- Offcanvas sider bara -->
+        <div
+          class="offcanvas offcanvas-start d-lg-none bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div
+              class="nav nav-tabs mukti border-none bg-dark"
+              id="nav-tab"
+              role="tablist"
+            >
+              <a
+                class="nav-tab active bg-dark text-white p-2"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                CATEGORIES
+              </a>
+
+              <a
+                class="nav-tab bg-dark text-white p-2"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                MAIN MENU
+              </a>
+            </div>
+          </div>
+
+          <!-- Tab-content -->
+          <div class="tab-content" id="nav-tabContent">
+
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+              tabindex="0"
+            >
+              <ul class="list-group list-group-flush bg-dark mt-3">
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">Home</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">About Us</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">Contact Us</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">My Account</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">My wishlist</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+              tabindex="0"
+            >
+               <ul class="list-group list-group-flush bg-dark mt-3">
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">Home</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">About Us</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">Contact Us</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">My Account</span>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <span class="fw-light">My wishlist</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-disabled"
+              role="tabpanel"
+              aria-labelledby="nav-disabled-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+
+        <form class="d-lg-block d-md-block d-none" role="search" style="width: 600px">
+          <div class="input-group">
+            <input
+              type="search"
+              class="form-control form-control-sm p-2"
+              placeholder="Search for"
+            />
+            <button type="submit" class="btn btn-sm btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- Navbar right side -->
+        <div class="navbar-right-left d-flex justify-content-center d-block">
+          <!-- sign-up section -->
+          <div
+            class="signup-section d-flex justify-content-center align-items-center text-white"
+          >
+            <div class="sign-up">
+              <a href="" class="text-white fw-light p-2">
+                <i class="fa-solid fa-user"></i>
+                Sign In
+              </a>
+            </div>
+            <span class="delimiter"></span>
+            <div class="register fw-light p-2">
+              <a href="" class="text-white"> Register</a>
+            </div>
+          </div>
+
+          <!-- Border -->
+          <div class="border ms-2 mx-3 d-lg-block d-md-none d-sm-none"></div>
+          <!-- compare section -->
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
+          >
+            <i class="fa-regular fa-heart text-white"></i>
+            <span
+              class="fw-light text-center text-white d-lg-block d-md-none d-sm-none"
+              style="font-size: 13px"
+              >Wishlist</span
+            >
+          </div>
+
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
+          >
+            <i class="fa-solid fa-scale-balanced text-white"></i>
+            <span
+              class="fw-light text-center text-white d-lg-block d-md-none d-sm-none"
+              style="font-size: 13px"
+              >Compare</span
+            >
+          </div>
+
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
+          >
+            <i class="fa-solid fa-bag-shopping text-white"></i>
+            <span
+              class="fw-light text-center text-white d-lg-block d-md-none d-sm-none"
+              style="font-size: 13px"
+              >Cart</span
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- Category Section -->
     <div class="container">
@@ -252,9 +467,8 @@
     </div>
 
     <!-- Splider Image -->
-
     <div class="container mt-3">
-      <div class="row" style="">
+      <div class="row">
         <div class="col-9">
           <div class="splide">
             <div class="splide__slider">
@@ -484,64 +698,6 @@
       </div>
     </div>
 
-    <!-- Product section not use splider -->
-    <!-- <section class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="procuct-box border rounded py-2 px-1">
-            <div
-              class="product d-lg-flex d-sm-flex justify-content-center align-items-center"
-            >
-              <div class="product-img">
-                <img
-                  src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
-                  alt=""
-                />
-              </div>
-              <div class="product-content px-3">
-                <div class="product-title pb-2">
-                  <a> Most Demanding pendant For Girls and Women </a>
-                </div>
-                <div class="product-popularity d-flex">
-                  <div class="product-rating">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                  <div class="product-review ps-2">
-                    <span>(0 Reviews)</span>
-                  </div>
-                </div>
-                <div class="product-price d-flex mt-2">
-                  <div class="product-amount">
-                    <h5>Tk 183</h5>
-                  </div>
-                  <span class="text-decoration-line-through ps-3 fw-light"
-                    >TK 290</span
-                  >
-                </div>
-                <div class="product-buy d-flex align-items-center">
-                  <a
-                    href="#"
-                    class="btn btn-sm btn-outline-dark d-inline-flex align-items-center justify-content-center px-5 py-2 mt-3"
-                  >
-                    <i class="fa-solid fa-bag-shopping fs-4"></i>
-                    <span class="ms-2 fs-6">BUY NOW</span>
-                  </a>
-                  <div class="product-icon mt-3 px-3">
-                    <i class="fa-regular fa-heart hover"></i>
-                    <i class="fa-solid fa-scale-balanced ms-3 hover"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- Product splider -->
     <section
       class="splide container"
@@ -562,11 +718,11 @@
                   </div>
                 </div>
                 <div class="col-6">
-                  <div
-                    class="product-content d-flex-column align-items-center justify-content-center mt-5"
-                  >
+                  <div class="product-content mt-5">
                     <div class="product-title pb-2">
-                      <a> Most Demanding pendant For Girls and Women </a>
+                      <a class="">
+                        Most Demanding pendant For Girls and Women
+                      </a>
                     </div>
                     <div class="product-popularity d-flex">
                       <div class="product-rating">
@@ -779,59 +935,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="product-img">
-            <img
-              src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="product-content d-flex-columnn  justify-content-center align-items-center">
-            <div class="product-title">
-              <a> Most Demanding pendant For Girls and Women </a>
-            </div>
-            <div class="product-popularity d-flex">
-                  <div class="product-rating">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                  <div class="product-review ps-2">
-                    <span>(0 Reviews)</span>
-                  </div>
-                </div>
-                <div class="product-price d-flex mt-2">
-                  <div class="product-amount">
-                    <h5>Tk 183</h5>
-                  </div>
-                  <span class="text-decoration-line-through ps-3 fw-light"
-                    >TK 290</span
-                  >
-                </div>
-                <div class="product-buy d-flex align-items-center">
-                  <a
-                    href="#"
-                    class="btn btn-sm btn-outline-dark d-inline-flex align-items-center justify-content-center px-5 py-2 mt-3"
-                  >
-                    <i class="fa-solid fa-bag-shopping fs-4"></i>
-                    <span class="ms-2 fs-6">BUY NOW</span>
-                  </a>
-                  <div class="product-icon mt-3 px-3">
-                    <i class="fa-regular fa-heart hover"></i>
-                    <i class="fa-solid fa-scale-balanced ms-3 hover"></i>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Desert-item show -->
     <div class="container">
@@ -1093,7 +1196,6 @@
     </div>
 
     <!-- Recommended section use navs and tabs -->
-
     <div class="container">
       <div class="nav-box">
         <div class="row justify-content-center text-center">
@@ -1108,7 +1210,7 @@
             >
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link active"
                   id="pills-home-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-home"
@@ -1116,8 +1218,9 @@
                   role="tab"
                   aria-controls="pills-home"
                   aria-selected="true"
-                  >Best Seller</button
                 >
+                  Best Seller
+                </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button
@@ -1167,8 +1270,8 @@
         </div>
       </div>
     </div>
-
-    <div class="tab-content" id="pills-tabContent">
+    <!-- tab-section -->
+    <div class="container tab-content" id="pills-tabContent">
       <div
         class="tab-pane fade show active"
         id="pills-home"
@@ -1176,7 +1279,289 @@
         aria-labelledby="pills-home-tab"
         tabindex="0"
       >
-        ...
+        <div class="splide" aria-label="Basic Structure Example" id="tabitem">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/cake-2-500gm_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/cake-3.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="splide" aria-label="Basic Structure Example" id="tabitem-2">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div
         class="tab-pane fade"
@@ -1185,7 +1570,297 @@
         aria-labelledby="pills-profile-tab"
         tabindex="0"
       >
-        ...
+        <div
+          class="splide"
+          aria-label="Basic Structure Example"
+          id="newarrival-1"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="splide"
+          aria-label="Basic Structure Example"
+          id="newarrival"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./assets/assets/slim-fit-chino-gabardine-pants-grey_300.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div
         class="tab-pane fade"
@@ -1204,6 +1879,656 @@
         tabindex="0"
       >
         ...
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="container mt-5">
+      <div class="banner-image rounded">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="" src="./assets/assets/banner_App--Image.webp" alt="" />
+          </div>
+
+          <div class="col-lg-5 text-center m-auto">
+            <a class="btn btn-primary" href=""
+              >Download
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+          <div class="col-lg-2 text-center m-auto">
+            <a href="">
+              <img src="./assets/assets/play-store-button-1.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- vendor and product  use splid-->
+    <div class="container">
+      <h3 class="p-4">Most Popular Brands</h3>
+      <section
+        class="splide"
+        aria-label="Basic Structure Example"
+        id="weekly-brand"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="vendor border rounded p-3">
+                <div class="vendor-details d-flex">
+                  <div class="vendor-logo">
+                    <img
+                      src="./assets/assets/realme_100.jpeg"
+                      alt=""
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="vendor-personal ms-2">
+                    <h4 class="vendor-name">
+                      Realme
+                      <span class="vendor-product-count fw-light"
+                        >(1189 Products)</span
+                      >
+                    </h4>
+
+                    <div class="vendor-rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="vendor-product pt-3">
+                  <div class="vendor-product-img">
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="vendor border rounded p-3">
+                <div class="vendor-details d-flex">
+                  <div class="vendor-logo">
+                    <img
+                      src="./assets/assets/realme_100.jpeg"
+                      alt=""
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="vendor-personal ms-2">
+                    <h4 class="vendor-name">
+                      Realme
+                      <span class="vendor-product-count fw-light"
+                        >(1189 Products)</span
+                      >
+                    </h4>
+
+                    <div class="vendor-rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="vendor-product pt-3">
+                  <div class="vendor-product-img">
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="vendor border rounded p-3">
+                <div class="vendor-details d-flex">
+                  <div class="vendor-logo">
+                    <img
+                      src="./assets/assets/realme_100.jpeg"
+                      alt=""
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="vendor-personal ms-2">
+                    <h4 class="vendor-name">
+                      Realme
+                      <span class="vendor-product-count fw-light"
+                        >(1189 Products)</span
+                      >
+                    </h4>
+
+                    <div class="vendor-rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="vendor-product pt-3">
+                  <div class="vendor-product-img">
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="vendor border rounded p-3">
+                <div class="vendor-details d-flex">
+                  <div class="vendor-logo">
+                    <img
+                      src="./assets/assets/realme_100.jpeg"
+                      alt=""
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="vendor-personal ms-2">
+                    <h4 class="vendor-name">
+                      Realme
+                      <span class="vendor-product-count fw-light"
+                        >(1189 Products)</span
+                      >
+                    </h4>
+
+                    <div class="vendor-rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="vendor-product pt-3">
+                  <div class="vendor-product-img">
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="vendor border rounded p-3">
+                <div class="vendor-details d-flex">
+                  <div class="vendor-logo">
+                    <img
+                      src="./assets/assets/realme_100.jpeg"
+                      alt=""
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="vendor-personal ms-2">
+                    <h4 class="vendor-name">
+                      Realme
+                      <span class="vendor-product-count fw-light"
+                        >(1189 Products)</span
+                      >
+                    </h4>
+
+                    <div class="vendor-rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="vendor-product pt-3">
+                  <div class="vendor-product-img">
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/assets/realme-narzo-50a-prime-4gb128gb-blue_100.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Most popular brand -->
+    <div class="container mp-title-container p-3">
+      <h3>Most Popular Brands</h3>
+    </div>
+    <div
+      class="container most-popular-container-main border border-2 rounded-2 p-4 mb-2"
+    >
+      <div class="splide" id="most-popular">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 26.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 27.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 28.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 29.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 30.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 31.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 32.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 33.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 34.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 35.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 36.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 37.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 38.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 39.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 40.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/Regal.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 41.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="./assets/assets/asset 42.jpeg" width="100%" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subscribe and download container -->
+    <div class="subscribe-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="icon-box text-white mt-5">
+              <div class="icon-box-img">
+                <i class="fa-regular fa-envelope icon"></i>
+              </div>
+              <div class="icon-content mt-2">
+                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                <p>
+                  Get all the latest information on Events, Sales and Offers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="icon-box-right mt-5 text-white">
+              <div class="icon-content">
+                <h4>DOWNLOAD OUR NEW APP TODAY</h4>
+                <p>
+                  Dont Miss our mobile-only offers and shop with Android Play.
+                </p>
+              </div>
+              <a class="btn btn-primary border py-2 px-4 ms-4" href=""
+                >Download
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="widget widget-about mt-5">
+            <a href="/" class="logo">
+              <img
+                class="img-fluid mb-3"
+                src="https://www.othoba.com/Themes/Othoba/Content/images/logoOthoba.png"
+                alt="Othoba logo"
+                width="144"
+                height="45"
+                style="height: 49px"
+              />
+            </a>
+            <div class="widget-body">
+              <p class="widget-about-title">
+                Got Question? Call us 9 AM- 10 PM
+              </p>
+              <a href="" class="widget-about-call text-decoration-none">
+                09613-800800
+              </a>
+              <p class="widget-about-desc" style="margin-bottom: 3px">
+                Follow Us
+              </p>
+              <div
+                class="social-icons social-icons-colored"
+                style="margin-bottom: 5px"
+              >
+                <a
+                  href="https://www.facebook.com/othobabd"
+                  class="social-icon social-facebook"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                  href="https://twitter.com/othobabd"
+                  class="social-icon social-twitter w-icon-twitter"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/othoba.com"
+                  class="social-icon social-youtube fab fa-linkedin-in"
+                >
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCiHIquLU2E9UMiygIsTveQA"
+                  class="social-icon social-youtube w-icon-youtube"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+
+            <span class="fw-light"> See our reviews on </span>
+            <svg
+              width="102"
+              height="94"
+              viewBox="0 0 102 94"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="color: #04da8d; width: 2rem; height: 1.5rem"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M62.5164 35.7675H101.231L70.0485 57.9374L50.7663 71.535L19.4328 93.7049L31.3335 57.9374L0 35.7675H38.715L50.6157 0L62.5164 35.7675ZM72.6089 66.2137L50.6152 71.6823L81.7981 94L72.6089 66.2137Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <a
+              href="https://www.trustpilot.com/review/www.othoba.com"
+              target="_blank"
+              rel="noopener"
+              id="style-B3dxg"
+              class="text-decoration-none"
+            >
+              Trustpilot
+            </a>
+          </div>
+        </div>
+
+        <!-- 2nd section footer -->
+        <div class="col-3">
+          <div class="widget mt-5">
+            <h3 class="widget-title fw-normal" style="font-size: medium">
+              Company
+            </h3>
+            <ul class="widget-body">
+              <li>
+                <a href="" class="">
+                  <span class="fw-light">About Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Career</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light"> Contact Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Privacy Policy</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Othoba Certified</span>
+                </a>
+              </li>
+              <li>
+                <a href=" ">
+                  <span class="fw-light">Terms &amp; Condition</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Next/Same day delivery TC</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- #3rd section -->
+
+        <div class="col-3">
+          <div class="widget mt-5">
+            <h3 class="widget-title fw-normal" style="font-size: medium">
+              MY ACCOUNT
+            </h3>
+            <ul class="widget-body">
+              <li>
+                <a href="" class="">
+                  <span class="fw-light">Sign in</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">orders</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Addresses</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">My Wishlist</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Order History</span>
+                </a>
+              </li>
+              <li>
+                <a href=" ">
+                  <span class="fw-light">Track My Order</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="widget mt-5">
+            <h3 class="widget-title fw-normal" style="font-size: medium">
+              CUSTOMER SERVICE
+            </h3>
+            <ul class="widget-body">
+              <li>
+                <a href="" class="">
+                  <span class="fw-light">Payment Methods</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Support Center</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">How To Shop On Othoba</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Featured Recommendation</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="fw-light">Cancellation, Return & Refund</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-last-section -->
+    <div class="container">
+      <div class="footer-part">
+        <div
+          class="footer-content d-flex justify-content-between align-items-center"
+        >
+          <div class="footer-left">
+            <a href="" class="fw-light">Othoba.com ltd</a>
+          </div>
+          <div
+            class="footer-right d-flex align-items-center justify-content-between"
+          >
+            <div class="footer-payment mt-3 p-2">
+              <p class="py-2 fw-light">We're using safe payment for</p>
+            </div>
+            <div class="footer-img py-2">
+              <img
+                class="img-fluid"
+                src="./assets/assets/payment.png"
+                alt=""
+                width="250"
+                height="25"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

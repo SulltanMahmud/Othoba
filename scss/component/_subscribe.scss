@@ -1,0 +1,29 @@
+.subscribe-container{
+    background-color: #439DDF;
+}
+
+.icon-box{
+    display: flex;
+    ;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+.icon{
+    font-size: 48px;
+    margin-right: 20px;
+}
+h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+p{
+    font-size: 13px;
+}
+
+.icon-box-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
