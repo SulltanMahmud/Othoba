@@ -177,7 +177,7 @@ const weeklybrand = new Splide("#weekly-brand", {
   perMove: 1,
   autoplay: true,
   interval: 2000,
-  gap: 10,
+  gap: "1rem",
   focus: "center",
 
   breakpoints: {
