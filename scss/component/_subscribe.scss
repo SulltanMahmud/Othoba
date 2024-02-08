@@ -3,32 +3,63 @@
 }
 
 .icon-box{
-    display: flex;
-    ;
-    
+    display: flex; 
     justify-content: center;
     align-items: center;
+    @include sm{
+        flex-direction: column;
+        margin-top: 0px;
+    }
 
 }
-.icon{
-    font-size: 40px;
-    margin-right: 20px;
-}
-h4{
+
+.icon-content{
+    h4{
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 0px;
+
+    @include sm{
+        font-size: 15px;
+        text-align: center;
+      
+        font-weight: 500;
+    }
 }
 p{
     font-size: 13px;
     margin-bottom: 0.5rem;
     padding: 0.1rem;
+     @include sm{
+        font-size: 11px;
+    }
 }
+}
+.icon{
+    font-size: 40px;
+    margin-right: 20px;
+    @include sm{
+        font-weight: 300;
+    }
+}
+ 
 
 .icon-box-right{
     display: flex;
     justify-content: end;
     align-items: center;
+
+    @include sm{
+        flex-direction: column;
+    }
+
+    a{
+        @include sm{
+            margin-left: auto;
+        }
+    }
+
+    
 }
 
  

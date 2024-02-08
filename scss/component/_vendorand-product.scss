@@ -1,0 +1,13 @@
+.vendor-details{
+    .vendor-personal h4{
+            font-size: 16px;
+
+             
+    }
+
+    .vendor-rating i{
+        @include sm{
+            font-size: 9px;
+        }
+    }
+}

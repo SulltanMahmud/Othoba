@@ -157,7 +157,15 @@ const mostPopularSplide = new Splide("#most-popular", {
   perPage: 8,
   autoplay: true,
   interval: 4000,
+
+  breakpoints: {
+    576: {
+      perPage: 2,
+      perMove: 1,
+    },
+  },
 });
+ 
 mostPopularSplide.mount();
 
 // Top weekly
@@ -166,12 +174,20 @@ const weeklybrand = new Splide("#weekly-brand", {
   pagination: true,
   type: "loop",
   perPage: 4,
-  perMove:1,
+  perMove: 1,
   autoplay: true,
   interval: 2000,
-  gap : 10,
+  gap: 10,
   focus: "center",
+
+  breakpoints: {
+    576: {
+      perPage: 1,
+      perMove: 1,
+    },
+  },
 });
+
 weeklybrand.mount();
 
 // Nav scroll bamp
