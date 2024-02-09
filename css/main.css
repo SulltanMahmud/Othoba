@@ -37,6 +37,11 @@
   color: black;
 }
 
+.row.row-category {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .text-decoration {
   text-decoration: none;
   color: black;
@@ -474,6 +479,14 @@ ul span {
   padding: 5px;
 }
 
+#desert .splide__pagination__page.is-active {
+  background-color: #439ddf;
+  width: 14px;
+  height: 7px;
+  border: 1px;
+  border-radius: 5px;
+}
+
 .text-decoration {
   text-decoration: none;
   color: black;
@@ -610,6 +623,18 @@ body {
   position: absolute;
   top: 0;
 }
+@media only screen and (max-width: 576px) {
+  .card-img-offer {
+    top: 10px;
+    left: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .card-img-offer img {
+    width: 40px;
+    height: 35pxpx;
+  }
+}
 
 .card-img-milk {
   position: relative;
@@ -620,6 +645,11 @@ body {
   right: 18px;
   top: 30px;
 }
+@media only screen and (max-width: 576px) {
+  .card-offer-percent img {
+    width: 20px;
+  }
+}
 
 .card-offer-clock {
   position: relative;
@@ -629,10 +659,6 @@ body {
   position: absolute;
   top: 8px;
   right: 5px;
-}
-
-.card-img-clock:hover {
-  background: url("/assets/assets/clock.webp") no-repeat;
 }
 
 @media only screen and (max-width: 576px) {

@@ -5,16 +5,39 @@
 .card-img-offer{
     position: absolute;
     top: 0;
+    @include sm{
+        top: 10px;
+        left: 10px;
+    }
+    
+    img{
+        @include sm{
+            width: 40px;
+            height: 35pxpx;
+        }
+    }
 }
 
 .card-img-milk{
 position: relative;
+
+      
+
+      
 }
  
 .card-offer-percent{
     position: absolute;
     right: 18px;
     top: 30px;
+
+    img{
+        @include sm{
+            width: 20px;
+        }
+    }
+
+   
 }
 .card-offer-clock{
     position: relative;
@@ -26,6 +49,4 @@ position: relative;
     right: 5px;
 }
 
-.card-img-clock:hover{
-background: url("/assets/assets/clock.webp") no-repeat;
-}
+ 

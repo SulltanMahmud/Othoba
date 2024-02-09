@@ -61,7 +61,7 @@ splide2.mount();
 
 const desert = new Splide("#desert", {
   arrows: false,
-  pagination: false,
+  pagination: true,
   type: "loop",
   perPage: 4,
   autoplay: true,
@@ -85,11 +85,13 @@ const tabitem = new Splide("#tabitem", {
   perPage: 5,
   autoplay: true,
   interval: 2000,
-  gap:10,
- 
+  gap: 10,
+
   breakpoints: {
-    640: {
-      height: "6rem",
+    576: {
+      perPage: 2,
+      gap: 10,
+      perMove: 1,
     },
   },
 });
@@ -106,30 +108,34 @@ const tabitem2 = new Splide("#tabitem-2", {
   gap: 10,
 
   breakpoints: {
-    640: {
-      height: "6rem",
+    576: {
+      perPage: 2,
+      gap: 10,
+      perMove: 1,
     },
   },
 });
 
 tabitem2.mount();
 
-const newarrival = new Splide("#newarrival", {
+const toprated = new Splide("#toprated", {
   arrows: false,
   pagination: false,
   type: "loop",
-  perPage: 4,
-  autoplay: true,
+  perPage: 5,
+  autoplay: false,
   interval: 2000,
-
+  gap:10,
   breakpoints: {
-    640: {
-      height: "6rem",
+    576: {
+      perPage: 2,
+      gap: 10,
+      perMove: 1,
     },
   },
 });
 
-newarrival.mount();
+toprated.mount();
 
 const newarrival1 = new Splide("#newarrival-1", {
   arrows: false,
@@ -138,13 +144,17 @@ const newarrival1 = new Splide("#newarrival-1", {
   perPage: 4,
   autoplay: true,
   interval: 2000,
+  gap: 20,
 
   breakpoints: {
-    640: {
-      height: "6rem",
+    576: {
+      perPage: 2,
+      gap: 10,
+      perMove: 1,
     },
   },
 });
+
 
 newarrival1.mount();
 
