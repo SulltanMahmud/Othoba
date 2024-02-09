@@ -1,0 +1,20 @@
+.title-container{
+    h4{
+        @include sm{
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+     
+    .input-item{
+        @include sm{
+            
+        }
+        a{
+            @include sm{
+                font-size: 15px;
+                
+            }
+        }
+    }
+}

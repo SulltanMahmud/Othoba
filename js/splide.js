@@ -156,7 +156,26 @@ const newarrival1 = new Splide("#newarrival-1", {
 });
 
 
-newarrival1.mount();
+const feature = new Splide("#feature", {
+  arrows: false,
+  pagination: false,
+  type: "loop",
+  perPage: 4,
+  autoplay: true,
+  interval: 2000,
+  gap: 20,
+
+  breakpoints: {
+    576: {
+      perPage: 2,
+      gap: 10,
+      perMove: 1,
+    },
+  },
+});
+
+
+feature.mount();
 
 // Most popular brand
 

@@ -1,4 +1,12 @@
 .category {
+
+@include sm{
+  max-width: 20%;
+  margin-left: 2px;
+  
+  
+}
+
   &:hover .category-img {
     border-width: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
@@ -16,6 +24,11 @@
     height: auto;
     object-fit: cover;
     vertical-align: middle;
+    @include sm{
+      max-width: 75%;
+    }
+
+     
   }
 
   &-content a:hover {
@@ -25,6 +38,9 @@
   &-content {
     align-items: center;
     margin-left: 10px;
+    @include sm{
+      margin-left: 0px;
+    }
   }
 
   &-content {
@@ -33,6 +49,10 @@
       font-weight: 400;
       line-height: 1rem;
       font-size: small;
+
+      @include sm{
+        font-size: 8px;
+      }
     }
     a {
       color: black;
@@ -40,7 +60,28 @@
   }
 }
 
-.row.row-category{
-  
-  flex-wrap: nowrap;
-}
+ .row.mobile-category{
+  @include sm{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+  }
+ }
+
+ .mobile-view{
+    i{
+      font-size: 10px;
+    }
+    a{
+      font-size: 14px;
+    }
+    .delimiter-nav{
+      margin-top: 10px;
+    }
+ }
+
+
+ 

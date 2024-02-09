@@ -72,7 +72,7 @@
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
-          style="width: 68%"
+          style="width: 67%"
         >
           <div
             class="nav nav-tabs mukti border-none bg-dark"
@@ -117,19 +117,87 @@
             >
               <ul class="list-group list-group-flush bg-dark mt-3">
                 <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">Home</span>
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                 </li>
                 <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">About Us</span>
+                   <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Online Trade Fair
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                 </li>
                 <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">Contact Us</span>
+                   <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Special Weekly Offer
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                 </li>
                 <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">My Account</span>
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Furniture Big Saving Days
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                 </li>
                 <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">My wishlist</span>
+                   <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Fashion
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+
+                 <li class="list-group-item bg-dark text-white">
+                   <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Fashion
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+
+                 <li class="list-group-item bg-dark text-white">
+                   <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Jewelleries & Accessories
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+
+                 <li class="list-group-item bg-dark text-white">
+                   <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Healthy & Beauty
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -160,8 +228,26 @@
             </div>
           </div>
         </div>
-
-        <form class="d-lg-block d-none" role="search" style="width: 600px">
+        <!--mobile view  -->
+        <div class="mobile-view d-flex d-block d-sm-none" style="width: 35%">
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2 d-lg-none d-block"
+          >
+            <i class="fa-solid fa-bag-shopping text-white bag"></i>
+          </div>
+          <span class="delimiter d-lg-none d-block delimiter-nav"></span>
+          <div class="sign-up">
+            <a href="" class="text-white fw-light p-2">
+              <i class="fa-solid fa-user"></i>
+              Sign In
+            </a>
+          </div>
+        </div>
+        <form
+          class="d-lg-block d-block mt-2 mt-sm-0"
+          role="search"
+          style="width: 600px"
+        >
           <div class="input-group">
             <input
               type="search"
@@ -233,7 +319,9 @@
           <div
             class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
           >
-            <i class="fa-solid fa-bag-shopping text-white"></i>
+            <i
+              class="fa-solid fa-bag-shopping text-white d-lg-block d-none"
+            ></i>
             <span
               class="fw-light text-center text-white d-lg-block d-none"
               style="font-size: 13px"
@@ -246,7 +334,7 @@
 
     <!-- Category Section -->
     <div class="container">
-      <div class="row row-category ">
+      <div class="row mobile-category">
         <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
@@ -259,12 +347,14 @@
           </div>
           <div class="category-content text-center mt-2">
             <p class="category-name fw-bold">
-              <a class="text-decoration-none" href="">Household Festival</a>
+              <a class="text-decoration-none" href=""
+                >Household <br />Festival</a
+              >
             </p>
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -276,12 +366,15 @@
           </div>
           <div class="category-content text-center mt-2">
             <p class="category-name fw-bold">
-              <a class="text-decoration-none" href="">Household Festival</a>
+              <a class="text-decoration-none" href=""
+                >ONLINE TRADE <br />
+                FAIR</a
+              >
             </p>
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -293,12 +386,15 @@
           </div>
           <div class="category-content text-center mt-2">
             <p class="category-name fw-bold">
-              <a class="text-decoration-none" href="">Household Festival</a>
+              <a class="text-decoration-none" href=""
+                >SPECIAL WEEKLY <br />
+                OFFER</a
+              >
             </p>
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -310,12 +406,15 @@
           </div>
           <div class="category-content text-center mt-2">
             <p class="category-name fw-bold">
-              <a class="text-decoration-none" href="">Household Festival</a>
+              <a class="text-decoration-none" href=""
+                >Home and <br />
+                living</a
+              >
             </p>
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -327,12 +426,15 @@
           </div>
           <div class="category-content text-center mt-2">
             <p class="category-name fw-bold">
-              <a class="text-decoration-none" href="">Household Festival</a>
+              <a class="text-decoration-none" href=""
+                >Household <br />
+                Festival</a
+              >
             </p>
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -349,7 +451,7 @@
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -365,7 +467,7 @@
             </p>
           </div>
         </div>
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -382,7 +484,7 @@
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -399,7 +501,7 @@
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -416,7 +518,7 @@
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -433,7 +535,7 @@
           </div>
         </div>
 
-        <div class="category col-md-1 mt-3">
+        <div class="category col-sm-1 mt-3">
           <div class="category-img">
             <a href="">
               <img
@@ -508,7 +610,7 @@
 
         <div class="col-lg-3 col-sm-none">
           <div class="d-flex flex-column gap-3">
-            <div class="sidebar-1">
+            <div class="sidebar-1 mt-3 mt-sm-0">
               <img
                 class="img-fluid rounded-2"
                 src="./assets/assets/asset 14.jpeg"
@@ -645,21 +747,21 @@
         </div>
         <div class="col-12">
           <div class="row gx-2">
-            <div class="col-4">
+            <div class="col-12 col-sm-4 mt-2 mt-sm-0">
               <img
                 class="rounded w-100"
                 src="./assets/assets/Fry-Bucket.jpeg"
                 alt=""
               />
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-4 mt-2 mt-sm-0">
               <img
                 class="rounded w-100"
                 src="./assets/assets/Sara-Web.jpeg"
                 alt=""
               />
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-4 mt-2 mt-sm-0">
               <img
                 class="rounded w-100"
                 src="./assets/assets/Web-Pizza.jpeg"
@@ -1577,6 +1679,7 @@
         </div>
       </div>
     </section>
+    
     <!-- tab-section -->
     <div class="container tab-content" id="pills-tabContent">
       <div
@@ -2013,7 +2116,7 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <div class="card-box mt-5">
-                  <div class="card" >
+                  <div class="card">
                     <div class="card-img-pant">
                       <img
                         src="./assets/assets/pant-2.jpeg"
@@ -2064,8 +2167,8 @@
                   </div>
                 </div>
 
-                 <div class="card-box mt-5">
-                  <div class="card" >
+                <div class="card-box mt-5">
+                  <div class="card">
                     <div class="card-img-pant">
                       <img
                         src="./assets/assets/pant-2.jpeg"
@@ -2118,7 +2221,7 @@
               </li>
               <li class="splide__slide">
                 <div class="card-box mt-5">
-                  <div class="card" >
+                  <div class="card">
                     <div class="card-img-clock">
                       <img
                         src="./assets/assets/clock-main.webp"
@@ -2167,7 +2270,7 @@
                 </div>
 
                 <div class="card-box mt-5">
-                  <div class="card" >
+                  <div class="card">
                     <div class="card-img-clock">
                       <img
                         src="./assets/assets/clock-main.webp"
@@ -2217,7 +2320,7 @@
               </li>
               <li class="splide__slide">
                 <div class="card-box mt-5">
-                  <div class="card" >
+                  <div class="card">
                     <img
                       src="./assets/assets/chicken-curry-puff_300.jpeg"
                       class=""
@@ -2260,8 +2363,8 @@
                   </div>
                 </div>
 
-                 <div class="card-box mt-5">
-                  <div class="card" >
+                <div class="card-box mt-5">
+                  <div class="card">
                     <img
                       src="./assets/assets/chicken-curry-puff_300.jpeg"
                       class=""
@@ -2307,8 +2410,6 @@
             </ul>
           </div>
         </div>
-
-         
       </div>
       <div
         class="tab-pane fade"
@@ -2317,7 +2418,7 @@
         aria-labelledby="pills-contact-tab"
         tabindex="0"
       >
-         <div class="splide" aria-label="Basic Structure Example" id="toprated">
+        <div class="splide" aria-label="Basic Structure Example" id="toprated">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
@@ -2333,8 +2434,8 @@
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
                       >
                         <a class="card-title fw-light font"
-                          >Remi Cotton Premium Quality </a
-                        >
+                          >Remi Cotton Premium Quality
+                        </a>
                         <i class="fa-solid fa-heart d-block"></i>
                       </div>
                       <div class="card-text">
@@ -2410,7 +2511,7 @@
                 </div>
               </li>
 
-               <li class="splide__slide">
+              <li class="splide__slide">
                 <div class="card-box">
                   <div class="card">
                     <img
@@ -2423,8 +2524,8 @@
                         class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
                       >
                         <a class="card-title fw-light font"
-                          >Premium Quality Navy Blue Color Full Sleeve  </a
-                        >
+                          >Premium Quality Navy Blue Color Full Sleeve
+                        </a>
                         <i class="fa-solid fa-heart d-block"></i>
                       </div>
                       <div class="card-text">
@@ -2544,7 +2645,7 @@
                   </div>
                 </div>
 
-                 <div class="card-box mt-3">
+                <div class="card-box mt-3">
                   <div class="card">
                     <img
                       src="./assets/assets/diploma-ifcmp-200gm_300.jpeg"
@@ -2639,7 +2740,7 @@
                   </div>
                 </div>
 
-                 <div class="card-box mt-3">
+                <div class="card-box mt-3">
                   <div class="card">
                     <div class="card-img-juice">
                       <img
@@ -2743,7 +2844,7 @@
                   </div>
                 </div>
 
-                 <div class="card-box mt-3">
+                <div class="card-box mt-3">
                   <div class="card">
                     <div class="card-img-drinko">
                       <img
@@ -2807,7 +2908,305 @@
         aria-labelledby="pills-featured-tab"
         tabindex="0"
       >
-        ...
+        <div class="splide" aria-label="Basic Structure Example" id="feature">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card">
+                    <div class="card-img-pant">
+                      <img
+                        src="./assets/assets/pant-2.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-offer-percent">
+                        <img
+                          src="./assets/assets/percentage-perfect.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-box mt-5">
+                  <div class="card">
+                    <div class="card-img-pant">
+                      <img
+                        src="./assets/assets/pant-2.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-offer-percent">
+                        <img
+                          src="./assets/assets/percentage-perfect.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card">
+                    <div class="card-img-clock">
+                      <img
+                        src="./assets/assets/clock-main.webp"
+                        class=""
+                        alt="..."
+                      />
+                      <div class="card-offer-percent-clock">
+                        <img src="./assets/assets/percentage-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-box mt-5">
+                  <div class="card">
+                    <div class="card-img-clock">
+                      <img
+                        src="./assets/assets/clock-main.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-offer-percent-clock">
+                        <img src="./assets/assets/percentage-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card-box mt-5">
+                  <div class="card">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class=""
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-box mt-5">
+                  <div class="card">
+                    <img
+                      src="./assets/assets/chicken-curry-puff_300.jpeg"
+                      class=""
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div
+                        class="title d-inline-flex align-items-center w-100 justify-content-between pb-3"
+                      >
+                        <a class="card-title fw-light font"
+                          >Cheery Cake 500gm</a
+                        >
+                        <i class="fa-solid fa-heart d-block"></i>
+                      </div>
+                      <div class="card-text">
+                        <div class="product-popularity d-flex">
+                          <div class="product-rating-desert">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="product-review-desert ps-2">
+                            <span>(0 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-price-desert d-flex mt-2">
+                          <div class="product-amount-desert">
+                            <h5>Tk 760</h5>
+                          </div>
+                          <h5
+                            class="text-decoration-line-through ps-1 fw-light discount"
+                          >
+                            TK 850
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Tab section end -->
@@ -2815,32 +3214,31 @@
     <!-- Banner -->
     <div class="container mt-5">
       <div class="banner-image rounded">
-      <div class="play-store-banner py-5 py-sm-0 px-5 px-sm-0">
-           <div class="row gy-3">
-          <div class="col-lg-4">
-            <div class="advertice-girl d-lg-block d-none">
-              <img
-                class=""
-                src="./assets/assets/banner_App--Image.webp"
-                alt=""
-              />
+        <div class="play-store-banner py-5 py-sm-0 px-5 px-sm-0">
+          <div class="row gy-3">
+            <div class="col-lg-4">
+              <div class="advertice-girl d-lg-block d-none">
+                <img
+                  class=""
+                  src="./assets/assets/banner_App--Image.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-5 text-sm-center m-sm-auto mb-2">
+              <a class="btn btn-primary" href=""
+                >Download
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+            </div>
+            <div class="col-lg-2 text-sm-center m-auto me-4">
+              <a href="">
+                <img src="./assets/assets/play-store-button-1.png" alt="" />
+              </a>
             </div>
           </div>
-
-          <div class="col-lg-5 text-sm-center m-sm-auto mb-2   ">
-            <a class="btn btn-primary " href=""
-              >Download
-              <i class="fa-solid fa-arrow-down"></i>
-            </a>
-          </div>
-          <div class="col-lg-2 text-sm-center m-auto me-4">
-            <a href="">
-              <img src="./assets/assets/play-store-button-1.png" alt=""
-                />
-            </a>
-          </div>
         </div>
-      </div>
       </div>
     </div>
 
@@ -2900,7 +3298,7 @@
                 </div>
               </div>
             </li>
-<!-- daily soap -->
+            <!-- daily soap -->
             <li class="splide__slide">
               <div class="vendor border rounded p-3">
                 <div class="vendor-details d-flex p-3">
@@ -2931,23 +3329,14 @@
                 </div>
                 <div class="vendor-product pt-3">
                   <div class="vendor-product-img">
-                    <img
-                      src="./assets/assets/daily-shoping-soap.jpeg"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/dailysoap2.jpeg"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/dailyshop-juice.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/assets/daily-shoping-soap.jpeg" alt="" />
+                    <img src="./assets/assets/dailysoap2.jpeg" alt="" />
+                    <img src="./assets/assets/dailyshop-juice.jpeg" alt="" />
                   </div>
                 </div>
               </div>
             </li>
-<!-- cycle -->
+            <!-- cycle -->
             <li class="splide__slide">
               <div class="vendor border rounded p-3">
                 <div class="vendor-details d-flex p-3">
@@ -2978,23 +3367,14 @@
                 </div>
                 <div class="vendor-product pt-3">
                   <div class="vendor-product-img">
-                    <img
-                      src="./assets/assets/cycle-1.webp"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/cycle-2.webp"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/cycle-2.webp"
-                      alt=""
-                    />
+                    <img src="./assets/assets/cycle-1.webp" alt="" />
+                    <img src="./assets/assets/cycle-2.webp" alt="" />
+                    <img src="./assets/assets/cycle-2.webp" alt="" />
                   </div>
                 </div>
               </div>
             </li>
-<!-- Winter -->
+            <!-- Winter -->
             <li class="splide__slide">
               <div class="vendor border rounded p-3">
                 <div class="vendor-details d-flex p-3">
@@ -3025,23 +3405,14 @@
                 </div>
                 <div class="vendor-product pt-3">
                   <div class="vendor-product-img">
-                    <img
-                      src="./assets/assets/shirt-1.jpeg"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/shirt-2.jpeg"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/shirt-3.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/assets/shirt-1.jpeg" alt="" />
+                    <img src="./assets/assets/shirt-2.jpeg" alt="" />
+                    <img src="./assets/assets/shirt-3.jpeg" alt="" />
                   </div>
                 </div>
               </div>
             </li>
-<!-- Regal -->
+            <!-- Regal -->
             <li class="splide__slide">
               <div class="vendor border rounded p-3">
                 <div class="vendor-details d-flex p-3">
@@ -3072,18 +3443,9 @@
                 </div>
                 <div class="vendor-product pt-3">
                   <div class="vendor-product-img">
-                    <img
-                      src="./assets/assets/regal-1.jpeg"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/regal-2.jpeg"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/assets/regal-3.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/assets/regal-1.jpeg" alt="" />
+                    <img src="./assets/assets/regal-2.jpeg" alt="" />
+                    <img src="./assets/assets/regal-3.jpeg" alt="" />
                   </div>
                 </div>
               </div>
@@ -3095,9 +3457,9 @@
 
     <!-- Most popular brand -->
     <section class="mt-4 mt-ms-0">
-       <div class="container mp-title-container p-3  ">
-      <h3>Most Popular Brands</h3>
-    </div>
+      <div class="container mp-title-container p-3">
+        <h3>Most Popular Brands</h3>
+      </div>
     </section>
     <!-- popular brand splide -->
     <div
@@ -3232,7 +3594,9 @@
                   Dont Miss our mobile-only offers and shop with Android Play.
                 </p>
               </div>
-              <a class="btn btn-primary border py-2 px-4 ms-lg-4 ms-0 mb-3" href=""
+              <a
+                class="btn btn-primary border py-2 px-4 ms-lg-4 ms-0 mb-3"
+                href=""
                 >Download
                 <i class="fa-solid fa-arrow-down"></i>
               </a>
@@ -3378,7 +3742,7 @@
 
         <!-- #3rd section -->
 
-        <div class="col-6 col-sm-3 ">
+        <div class="col-6 col-sm-3">
           <div class="widget mt-5">
             <h3 class="widget-title fw-normal" style="font-size: medium">
               MY ACCOUNT
@@ -3426,7 +3790,7 @@
             <ul class="widget-body last-widget">
               <li>
                 <a href="" class="">
-                  <span class="fw-light ">Payment Methods</span>
+                  <span class="fw-light">Payment Methods</span>
                 </a>
               </li>
               <li>
@@ -3459,16 +3823,18 @@
     <div class="container">
       <div class="footer-part">
         <div
-          class="footer-content d-flex flex-column flex-sm-row  justify-content-between align-items-center"
+          class="footer-content d-flex flex-column flex-sm-row justify-content-between align-items-center"
         >
           <div class="footer-left">
             <a href="" class="fw-light">Othoba.com ltd</a>
           </div>
           <div
-            class="footer-right d-flex flex-column flex-sm-row  align-items-center justify-content-between"
+            class="footer-right d-flex flex-column flex-sm-row align-items-center justify-content-between"
           >
             <div class="footer-payment mt-1 mt-sm-3 p-1 p-sm-2">
-              <p class="py-sm-2 py-1 mb-0 mb-sm-3 fw-light">We're using safe payment for</p>
+              <p class="py-sm-2 py-1 mb-0 mb-sm-3 fw-light">
+                We're using safe payment for
+              </p>
             </div>
             <div class="footer-img py-0 py-sm-2">
               <img
