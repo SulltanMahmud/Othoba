@@ -1,73 +1,71 @@
-.subscribe-container{
-    background-color: #439DDF;
-}
+.subscribe-container {
+  background-color: #439ddf;
 
-.icon-box{
-    display: flex; 
+  .icon-box {
+    display: flex;
     justify-content: center;
     align-items: center;
-    @include sm{
-        flex-direction: column;
-        margin-top: 0px;
+    margin-right: 70px;
+    @include sm {
+      flex-direction: column;
+      margin-top: 0px;
     }
+  }
 
-}
+  .icon-content {
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0px;
 
-.icon-content{
-    h4{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0px;
-
-    @include sm{
+      @include sm {
         font-size: 15px;
         text-align: center;
-      
+
         font-weight: 500;
+      }
     }
-}
-p{
+  }
+
+  p {
     font-size: 13px;
     margin-bottom: 0.5rem;
     padding: 0.1rem;
-     @include sm{
-        font-size: 11px;
+    @include sm {
+      font-size: 11px;
     }
-}
-}
-.icon{
+  }
+
+  .icon {
     font-size: 40px;
     margin-right: 20px;
-    @include sm{
-        font-weight: 300;
+    @include sm {
+      font-weight: 300;
     }
-}
- 
+  }
 
-.icon-box-right{
+  .icon-box-right {
     display: flex;
     justify-content: end;
     align-items: center;
 
-    @include sm{
-        flex-direction: column;
+    @include sm {
+      flex-direction: column;
     }
 
-    a{
-        @include sm{
-            margin-left: auto;
-        }
+    a {
+      @include sm {
+        margin-left: auto;
+      }
     }
+  }
 
-    
-}
-
- 
- .msg-icon{
+  .msg-icon {
     font-size: 60px;
     font-weight: 400;
- }
+  }
 
-.btn-primary {
-    --bs-btn-bg:#439DDF;
+  .btn-primary {
+    --bs-btn-bg: #439ddf;
+  }
 }
