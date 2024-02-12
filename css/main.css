@@ -57,6 +57,15 @@
 .category-content a {
   color: black;
 }
+.category .mobile-view i {
+  font-size: 10px;
+}
+.category .mobile-view a {
+  font-size: 14px;
+}
+.category .mobile-view .delimiter-nav {
+  margin-top: 10px;
+}
 
 @media only screen and (max-width: 576px) {
   .row.mobile-category {
@@ -70,16 +79,6 @@
     -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
   }
-}
-
-.mobile-view i {
-  font-size: 10px;
-}
-.mobile-view a {
-  font-size: 14px;
-}
-.mobile-view .delimiter-nav {
-  margin-top: 10px;
 }
 
 .text-decoration {
@@ -244,7 +243,6 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
-
 .card-body .title {
   padding-bottom: 8px;
 }
@@ -253,36 +251,31 @@ body {
     padding-bottom: 2px;
   }
 }
-
-.product-rating-desert i {
+.card-body .product-rating-desert i {
   font-size: 13px;
 }
 @media only screen and (max-width: 576px) {
-  .product-rating-desert i {
+  .card-body .product-rating-desert i {
     font-size: 8px;
   }
 }
-
-.product-review-desert span {
+.card-body .product-review-desert span {
   font-size: 13px;
 }
 @media only screen and (max-width: 576px) {
-  .product-review-desert span {
+  .card-body .product-review-desert span {
     font-size: 10px;
   }
 }
-
-.product-amount-desert h5 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.product-price-desert span {
+.card-body .product-price-desert span {
   font-size: 13px;
   font-weight: 600;
 }
-
-.discount {
+.card-body .product-price-desert span .product-amount-desert h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card-body .discount {
   font-size: 16px;
   font-weight: 600;
 }
@@ -561,36 +554,31 @@ body {
   background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
 }
 
-.delimiter {
-  border: 1px solid white;
-  height: 10px;
-}
-
-.signup-section a {
-  font-size: 13px;
-}
-
-.wishlist i {
-  font-size: 26px;
-}
-
 #nav-container {
   background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
   background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
 }
-
-.nav-link-active:active {
+#nav-container .nav-link-active:active {
   color: #439ddf;
   border-color: #439ddf;
 }
-
-.mukti.nav.nav-tabs {
+#nav-container .delimiter {
+  border: 1px solid white;
+  height: 10px;
+}
+#nav-container .signup-section a {
+  font-size: 13px;
+}
+#nav-container .wishlist i {
+  font-size: 26px;
+}
+#nav-container .mukti.nav.nav-tabs {
   border: none;
 }
-.mukti.nav.nav-tabs .nav-tab {
+#nav-container .mukti.nav.nav-tabs .nav-tab {
   border-bottom: 3px solid white;
 }
-.mukti.nav.nav-tabs .nav-tab.active {
+#nav-container .mukti.nav.nav-tabs .nav-tab.active {
   border-bottom: 2px solid #439ddf;
 }
 
@@ -655,50 +643,45 @@ body {
           transform-origin: bottom left;
 }
 
-.card-img-juice {
-  position: relative;
-}
-
-.card-img-offer {
+.card-box .card-img-offer {
   position: absolute;
   top: 0;
 }
 @media only screen and (max-width: 576px) {
-  .card-img-offer {
+  .card-box .card-img-offer {
     top: 10px;
     left: 10px;
   }
 }
 @media only screen and (max-width: 576px) {
-  .card-img-offer img {
+  .card-box .card-img-offer img {
     width: 40px;
     height: 35pxpx;
   }
 }
-
-.card-img-milk {
+.card-box .card-img-juice {
   position: relative;
 }
-
-.card-offer-percent {
+.card-box .card-img-milk {
+  position: relative;
+}
+.card-box .card-offer-clock {
+  position: relative;
+}
+.card-box .card-offer-percent-clock {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+.card-box .card-offer-percent {
   position: absolute;
   right: 18px;
   top: 30px;
 }
 @media only screen and (max-width: 576px) {
-  .card-offer-percent img {
+  .card-box .card-offer-percent img {
     width: 20px;
   }
-}
-
-.card-offer-clock {
-  position: relative;
-}
-
-.card-offer-percent-clock {
-  position: absolute;
-  top: 8px;
-  right: 5px;
 }
 
 @media only screen and (max-width: 576px) {

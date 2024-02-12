@@ -1,16 +1,3 @@
-.delimiter {
-  border: 1px solid white;
-  height: 10px;
-  //   padding: 0 6px;
-}
-
-.signup-section a {
-  font-size: 13px;
-}
-.wishlist i {
-  font-size: 26px;
-}
-
 #nav-container {
   background: linear-gradient(
     90deg,
@@ -18,26 +5,36 @@
     rgb(32, 124, 202) 35%,
     rgb(29, 95, 171) 100%
   );
-}
 
-.nav-link-active:active {
-  color: #439ddf;
-  border-color: #439ddf;
-}
-.mukti {
-  &.nav {
-    &.nav-tabs {
-      border: none;
-      .nav-tab {
-        border-bottom: 3px solid white;
-        
-        &.active {
-          border-bottom: 2px solid #439ddf;
+  .nav-link-active:active {
+    color: #439ddf;
+    border-color: #439ddf;
+  }
+
+  .delimiter {
+    border: 1px solid white;
+    height: 10px;
+    //   padding: 0 6px;
+  }
+
+  .signup-section a {
+    font-size: 13px;
+  }
+  .wishlist i {
+    font-size: 26px;
+  }
+  .mukti {
+    &.nav {
+      &.nav-tabs {
+        border: none;
+        .nav-tab {
+          border-bottom: 3px solid white;
+
+          &.active {
+            border-bottom: 2px solid #439ddf;
+          }
         }
       }
-       
     }
   }
 }
- 
- 

@@ -1,54 +1,46 @@
-.card-img-juice {
-    position: relative;
-}
-
-
-
-.card-img-offer{
+.card-box {
+  .card-img-offer {
     position: absolute;
     top: 0;
-    @include sm{
-        top: 10px;
-        left: 10px;
+    @include sm {
+      top: 10px;
+      left: 10px;
     }
-    
-    img{
-        @include sm{
-            width: 40px;
-            height: 35pxpx;
-        }
+
+    img {
+      @include sm {
+        width: 40px;
+        height: 35pxpx;
+      }
     }
-}
+  }
 
-.card-img-milk{
-position: relative;
+  .card-img-juice {
+    position: relative;
+  }
 
-      
+  .card-img-milk {
+    position: relative;
+  }
 
-      
-}
- 
-.card-offer-percent{
+  .card-offer-clock {
+    position: relative;
+  }
+  .card-offer-percent-clock {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+  }
+
+  .card-offer-percent {
     position: absolute;
     right: 18px;
     top: 30px;
 
-    img{
-        @include sm{
-            width: 20px;
-        }
+    img {
+      @include sm {
+        width: 20px;
+      }
     }
-
-   
+  }
 }
-.card-offer-clock{
-    position: relative;
-
-}
-.card-offer-percent-clock{
-    position: absolute;
-    top: 8px;
-    right: 5px;
-}
-
-  

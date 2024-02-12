@@ -1,43 +1,43 @@
-.card-body .card-title {
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-  
-}
-
-.card-body .title{
-     padding-bottom: 8px;
-       @include sm{
-        padding-bottom: 2px;
-       }  
-}
- 
-
-.product-rating-desert i {
-  font-size: 13px;
-  @include sm{
-    font-size: 8px;
+.card-body {
+  .card-title {
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
   }
-}
 
-.product-review-desert span {
-  font-size: 13px;
-  @include sm{
-    font-size: 10px;
+  .title {
+    padding-bottom: 8px;
+    @include sm {
+      padding-bottom: 2px;
+    }
   }
-}
 
-.product-amount-desert h5 {
-  font-size: 16px;
-  font-weight: 600;
-}
+  .product-rating-desert i {
+    font-size: 13px;
+    @include sm {
+      font-size: 8px;
+    }
+  }
 
-.product-price-desert span {
-  font-size: 13px;
-  font-weight: 600;
-}
+  .product-review-desert span {
+    font-size: 13px;
+    @include sm {
+      font-size: 10px;
+    }
+  }
 
-.discount {
-  font-size: 16px;
-  font-weight: 600;
+  .product-price-desert span {
+    font-size: 13px;
+    font-weight: 600;
+
+    .product-amount-desert h5 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .discount {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
