@@ -11,12 +11,11 @@
 
   &-img {
     border-radius: 50%;
-    border: 0px solid #fff;
+    border: 0px solid $white-color;
     transition: box-shadow 0.1s;
     min-width: 80px;
-  }
 
-  img {
+      img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -25,16 +24,19 @@
       max-width: 75%;
     }
   }
-
-  &-content a:hover {
-    color: #56b3f6;
   }
 
-  &-content {
+ 
+
+ &-content {
     align-items: center;
     margin-left: 10px;
     @include sm {
       margin-left: 0px;
+    }
+
+    a:hover {
+      color: $sky-color;
     }
   }
 
@@ -49,7 +51,7 @@
       }
     }
     a {
-      color: black;
+      color: $black-color;
     }
   }
 
@@ -74,5 +76,8 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }

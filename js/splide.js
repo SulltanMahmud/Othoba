@@ -5,20 +5,13 @@ var splide = new Splide("#first-splide", {
   autoplay: true,
   arrows: false,
   interval: 2000,
-
-   
 });
-
 
 splide.mount();
 
 // hot deals Product splide
 
- 
-
-// After hot deals splide img 
-
- 
+// After hot deals splide img
 
 const afterhotdealsplide = new Splide("#afterhotdealsplide", {
   arrows: false,
@@ -31,16 +24,12 @@ const afterhotdealsplide = new Splide("#afterhotdealsplide", {
   interval: 2000,
   breakpoints: {
     576: {
-       perPage:1,
-      
+      perPage: 1,
     },
   },
 });
-   
 
 afterhotdealsplide.mount();
- 
-
 
 const splide2 = new Splide("#icon-slider", {
   arrows: false,
@@ -49,22 +38,18 @@ const splide2 = new Splide("#icon-slider", {
 
   breakpoints: {
     576: {
-       perPage:1,
-      
+      perPage: 1,
     },
   },
 });
 splide2.mount();
-
- 
-
 
 const desert = new Splide("#desert", {
   arrows: false,
   pagination: true,
   type: "loop",
   perPage: 4,
-  autoplay: true,
+  autoplay: false,
   interval: 2000,
   gap: 10,
   perMove: 1,
@@ -125,7 +110,7 @@ const toprated = new Splide("#toprated", {
   perPage: 5,
   autoplay: false,
   interval: 2000,
-  gap:10,
+  gap: 10,
   breakpoints: {
     576: {
       perPage: 2,
@@ -155,6 +140,7 @@ const newarrival1 = new Splide("#newarrival-1", {
   },
 });
 
+newarrival1.mount();
 
 const feature = new Splide("#feature", {
   arrows: false,
@@ -173,7 +159,6 @@ const feature = new Splide("#feature", {
     },
   },
 });
-
 
 feature.mount();
 
@@ -194,7 +179,7 @@ const mostPopularSplide = new Splide("#most-popular", {
     },
   },
 });
- 
+
 mostPopularSplide.mount();
 
 // Top weekly
@@ -220,43 +205,33 @@ const weeklybrand = new Splide("#weekly-brand", {
 weeklybrand.mount();
 
 // Nav scroll bamp
- const navbar = document.getElementById("nav-container");
- let scrolled = false;
+const navbar = document.getElementById("nav-container");
+let scrolled = false;
 
- window.onscroll = function () {
-   if (window.pageYOffset > 100) {
-     navbar.classList.remove("top");
-     if (!scrolled) {
-       navbar.style.transform = "translateY(-70px)";
-     }
-     setTimeout(function () {
-       navbar.style.transform = "translateY(0)";
-       scrolled = true;
-     }, 150);
-   } else {
-     navbar.classList.add("top");
-     scrolled = false;
-   }
- };
-
+window.onscroll = function () {
+  if (window.pageYOffset > 100) {
+    navbar.classList.remove("top");
+    if (!scrolled) {
+      navbar.style.transform = "translateY(-70px)";
+    }
+    setTimeout(function () {
+      navbar.style.transform = "translateY(0)";
+      scrolled = true;
+    }, 150);
+  } else {
+    navbar.classList.add("top");
+    scrolled = false;
+  }
+};
 
 //  Grocery product
 const grocery = new Splide("#grocery", {
   arrows: false,
   pagination: false,
-  type:"loop",
+  type: "loop",
   perPage: 4,
   autoplay: true,
   interval: 4000,
-  gap:20,
+  gap: 20,
 });
 grocery.mount();
-
-
- 
-
-
-
-
- 
-

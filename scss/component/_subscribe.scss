@@ -6,9 +6,11 @@
     justify-content: center;
     align-items: center;
     margin-right: 70px;
+
     @include sm {
       flex-direction: column;
       margin-top: 0px;
+      margin-right: 0px;
     }
   }
 

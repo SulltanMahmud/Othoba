@@ -1,3 +1,32 @@
+.text-decoration {
+  text-decoration: none;
+  color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 11px;
+}
+
 @media only screen and (max-width: 576px) {
   .category {
     max-width: 20%;
@@ -30,9 +59,6 @@
     max-width: 75%;
   }
 }
-.category-content a:hover {
-  color: #56b3f6;
-}
 .category-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -43,6 +69,9 @@
   .category-content {
     margin-left: 0px;
   }
+}
+.category-content a:hover {
+  color: #439ddf;
 }
 .category-content p {
   font-weight: 400;
@@ -55,7 +84,7 @@
   }
 }
 .category-content a {
-  color: black;
+  color: #000000;
 }
 .category .mobile-view i {
   font-size: 10px;
@@ -79,40 +108,9 @@
     -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
   }
-}
-
-.text-decoration {
-  text-decoration: none;
-  color: black;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  background: #fff;
-}
-
-.header-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 11px;
-}
-
-#nav-container {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
-  background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
+  .row.mobile-category::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .item {
@@ -175,7 +173,7 @@ body {
 
 .text-decoration {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 * {
@@ -200,11 +198,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 11px;
-}
-
-#nav-container {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
-  background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
 }
 
 .product-buy a:hover {
@@ -283,8 +276,7 @@ body {
 .banner-image {
   background-image: url("/assets/assets/banner-7.jpg");
 }
-
-img {
+.banner-image img {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -314,6 +306,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 0px;
+    margin-right: 0px;
   }
 }
 .subscribe-container .icon-content h4 {
@@ -379,23 +372,22 @@ img {
   --bs-btn-bg: #439ddf;
 }
 
-a:hover {
+.widget-about a:hover {
   color: #1914fe;
   cursor: pointer;
   text-decoration: none;
 }
-
-.social-icons a {
+.widget-about .social-icons a {
   text-decoration: none;
 }
-
 .widget-about .logo-footer {
   margin-bottom: 2rem;
 }
 
-.footer a:active, .footer a:hover {
+.footer-part .footer a:active,
+.footer-part .footer a:hover {
   cursor: pointer;
-  color: #439DDF;
+  color: #439ddf;
 }
 
 .logo {
@@ -403,16 +395,13 @@ a:hover {
   margin-right: 2rem;
 }
 
-.footer a.active, .footer a:active, .footer a:hover {
+.footer a.active,
+.footer a:active,
+.footer a:hover {
   cursor: pointer;
-  color: #439DDF;
+  color: #439ddf;
 }
 
-.widget-body {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 .social-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -422,7 +411,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #439DDF;
+  background-color: #439ddf;
   color: aliceblue;
   height: 35px;
   padding: 10px;
@@ -442,20 +431,13 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.widget-body {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   color: #333;
-}
-
-.widget-body {
   padding: 0;
   color: #666;
 }
-
 .widget-body li {
   line-height: 0.5;
   margin-bottom: 1.5rem;
@@ -494,17 +476,16 @@ ul span {
   border-radius: 5px;
 }
 
+#first-splide .splide__pagination__page {
+  margin-left: 10px;
+  padding: 5px;
+}
 #first-splide .splide__pagination__page.is-active {
   background-color: #439ddf;
   width: 14px;
   height: 7px;
   border: 1px;
   border-radius: 5px;
-}
-
-#first-splide .splide__pagination__page {
-  margin-left: 10px;
-  padding: 5px;
 }
 
 #desert .splide__pagination__page.is-active {
@@ -517,7 +498,7 @@ ul span {
 
 .text-decoration {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 * {
@@ -548,10 +529,11 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
   background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
 }
-
-#nav-container {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
-  background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
+@media only screen and (max-width: 576px) {
+  #nav-container .mobile-view .sign-up {
+    font-size: 13px;
+    margin-top: 3px;
+  }
 }
 #nav-container .nav-link-active:active {
   color: #439ddf;
@@ -592,8 +574,8 @@ body {
 }
 
 #first-splide .splide__pagination__page {
-  background-color: white;
-  bottom: -2px;
+  background-color: #fff;
+  bottom: 9px;
 }
 
 .nav-link {
@@ -679,10 +661,16 @@ body {
   }
 }
 
+.hot-deals-c {
+  margin-top: 50px;
+}
 @media only screen and (max-width: 576px) {
   .hot-deals-c {
     margin-top: 10px;
   }
+}
+.hot-deals-c .card-icon {
+  margin-top: 10px;
 }
 @media only screen and (max-width: 576px) {
   .hot-deals-c .hot-deals-card-title {
@@ -711,7 +699,7 @@ body {
   top: 65%;
   margin-left: 15px;
   padding: 18px;
-  color: white;
+  color: #fff;
   background-color: rgba(55, 54, 54, 0.8235294118);
   text-align: center;
 }

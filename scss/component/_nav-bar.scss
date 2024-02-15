@@ -1,4 +1,4 @@
-#nav-container {
+#nav-container{
   background: linear-gradient(
     90deg,
     rgb(92, 163, 218) 0%,
@@ -6,9 +6,21 @@
     rgb(29, 95, 171) 100%
   );
 
+  .mobile-view{
+    .sign-up{
+      @include sm{
+        font-size: 13px;
+        margin-top: 3px;
+      }
+      
+    }
+  }
+
+
+
   .nav-link-active:active {
-    color: #439ddf;
-    border-color: #439ddf;
+    color: $sky-color;
+    border-color: $sky-color;
   }
 
   .delimiter {
