@@ -1,3 +1,24 @@
+
+// Navbar jump
+const navbar = document.getElementById("nav-container");
+let scrolled = false;
+
+window.onscroll = function () {
+  if (window.pageYOffset > 100) {
+    navbar.classList.remove("top");
+    if (!scrolled) {
+      navbar.style.transform = "translateY(-70px)";
+    }
+    setTimeout(function () {
+      navbar.style.transform = "translateY(0)";
+      scrolled = true;
+    }, 150);
+  } else {
+    navbar.classList.add("top");
+    scrolled = false;
+  }
+};
+
 // First slide
 var splide = new Splide("#first-splide", {
   type: "loop",
@@ -203,26 +224,6 @@ const weeklybrand = new Splide("#weekly-brand", {
 });
 
 weeklybrand.mount();
-
-// Nav scroll bamp
-const navbar = document.getElementById("nav-container");
-let scrolled = false;
-
-window.onscroll = function () {
-  if (window.pageYOffset > 100) {
-    navbar.classList.remove("top");
-    if (!scrolled) {
-      navbar.style.transform = "translateY(-70px)";
-    }
-    setTimeout(function () {
-      navbar.style.transform = "translateY(0)";
-      scrolled = true;
-    }, 150);
-  } else {
-    navbar.classList.add("top");
-    scrolled = false;
-  }
-};
 
 //  Grocery product
 const grocery = new Splide("#grocery", {

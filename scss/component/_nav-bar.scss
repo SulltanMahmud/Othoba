@@ -1,52 +1,53 @@
-#nav-container{
+#nav-container {
   background: linear-gradient(
     90deg,
     rgb(92, 163, 218) 0%,
     rgb(32, 124, 202) 35%,
     rgb(29, 95, 171) 100%
   );
+  transition: transform 0.3s ease;
+  .mobile-view {
+    i {
+      font-size: 10px;
+    }
+    a {
+      font-size: 14px;
+    }
+    .delimiter-nav {
+      margin-top: 10px;
+    }
 
-  .mobile-view{
-    .sign-up{
-      @include sm{
+    .sign-up {
+      @include sm {
         font-size: 13px;
         margin-top: 3px;
       }
-      
     }
   }
 
+  // problem use another section
+  // .nav-link-active:active {
+  //   color: $sky-color;
+  //   border-color: $sky-color;
+  // }
 
-
-  .nav-link-active:active {
-    color: $sky-color;
-    border-color: $sky-color;
-  }
-
-  .delimiter {
-    border: 1px solid white;
-    height: 10px;
-    //   padding: 0 6px;
-  }
-
-  .signup-section a {
-    font-size: 13px;
-  }
-  .wishlist i {
-    font-size: 26px;
-  }
-  .mukti {
-    &.nav {
-      &.nav-tabs {
-        border: none;
-        .nav-tab {
-          border-bottom: 3px solid white;
-
-          &.active {
-            border-bottom: 2px solid #439ddf;
-          }
-        }
+  .navbar-right-left {
+    .signup-section {
+      a {
+        font-size: 13px;
       }
+
+      .small-border {
+        border: 1px solid white;
+        height: 10px;
+        //   padding: 0 6px;
+      }
+    }
+  }
+
+  .wishlist {
+    i {
+      font-size: 26px;
     }
   }
 }

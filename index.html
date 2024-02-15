@@ -38,7 +38,7 @@
               WELCOME TO OTHOBA.COM
             </p>
           </div>
-          <marquee class="marquee d-lg-none d-sm-block text-center" width="50%"
+          <marquee class="marquee d-lg-none d-sm-block text-center" width="100%"
             >WELCOME TO OTHOBA.COM</marquee
           >
 
@@ -52,8 +52,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-3 sticky-sm-top" id="nav-container">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <button
+         <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
@@ -63,19 +62,128 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+        <a class="navbar-brand" href="#">
+          
           <img src="./assets/assets/asset 0.png" alt="" />
         </a>
 
-        <!-- Offcanvas sider bara -->
+        <!-- Offcanvas sider bar -->
+        
+        <!--mobile view  -->
+        <div class="mobile-view d-flex d-block d-sm-none" style="width: 35%">
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2 d-lg-none d-block"
+          >
+            <i class="fa-solid fa-bag-shopping text-white bag"></i>
+          </div>
+          <span class="delimiter d-lg-none d-block delimiter-nav mt-2"></span>
+          <div class="sign-up">
+            <a href="" class="text-white fw-light p-2">
+              <i class="fa-solid fa-user"></i>
+              Sign In
+            </a>
+          </div>
+        </div>
+        <form
+          class="d-lg-block d-block mt-2 mt-sm-0"
+          role="search"
+          style="width: 600px"
+        >
+          <div class="input-group">
+            <input
+              type="search"
+              class="form-control form-control-sm p-2"
+              placeholder="Search for"
+            />
+            <button type="submit" class="btn btn-sm btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- Navbar right side -->
+        <div class="navbar-right-left d-flex justify-content-center d-block">
+          <!-- sign-up section -->
+          <div
+            class="signup-section d-flex justify-content-center align-items-center text-white"
+          >
+            <div class="sign-up d-lg-block d-none">
+              <a href="" class="text-white fw-light p-2">
+                <i class="fa-solid fa-user"></i>
+                Sign In
+              </a>
+            </div>
+            <span class="small-border d-lg-block d-none"></span>
+            <div class="register fw-light p-2 d-lg-block d-none">
+              <a href="" class="text-white"> Register</a>
+            </div>
+          </div>
+
+          <!-- Border -->
+          <div class="border ms-2 mx-3 d-lg-block d-none"></div>
+          <!-- compare section -->
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
+          >
+            <i class="fa-regular fa-heart text-white d-lg-block d-none"></i>
+            <span
+              class="fw-light text-center text-white d-lg-block d-none"
+              style="font-size: 13px"
+              >Wishlist</span
+            >
+          </div>
+
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
+          >
+            <i
+              class="fa-solid fa-scale-balanced text-white d-lg-block d-none"
+            ></i>
+            <span
+              class="fw-light text-center text-white d-lg-block d-none"
+              style="font-size: 13px"
+              >Compare</span
+            >
+          </div>
+
+          <div
+            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
+          >
+            <i
+              class="fa-solid fa-bag-shopping text-white d-lg-block d-none"
+            ></i>
+            <span
+              class="fw-light text-center text-white d-lg-block d-none"
+              style="font-size: 13px"
+              >Cart</span
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+     <!-- Offcanvas sider bar -->
         <div
-          class="offcanvas offcanvas-start d-lg-none bg-dark"
+          class="offcanvas offcanvas-sidebar offcanvas-start d-lg-none bg-dark"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
-          style="width: 67%"
+          style="width: 62%"
         >
+        <button type="button close-btn" class="btn-close btn-close-white offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           <div
-            class="nav nav-tabs mukti border-none bg-dark"
+            class="nav nav-tabs side-bar border-none bg-dark"
             id="nav-tab"
             role="tablist"
           >
@@ -83,7 +191,7 @@
               class="nav-tab active bg-dark text-white p-2 px-3"
               id="nav-home-tab"
               data-bs-toggle="tab"
-              data-bs-target="#nav-home"
+              data-bs-target="#nav-categories"
               type="button"
               role="tab"
               aria-controls="nav-home"
@@ -96,7 +204,7 @@
               class="nav-tab bg-dark text-white p-2 px-3"
               id="nav-profile-tab"
               data-bs-toggle="tab"
-              data-bs-target="#nav-profile"
+              data-bs-target="#nav-main-menu"
               type="button"
               role="tab"
               aria-controls="nav-profile"
@@ -107,10 +215,10 @@
           </div>
 
           <!-- Tab-content -->
-          <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content tab-content-nav" id="nav-tabContent">
             <div
               class="tab-pane fade show active"
-              id="nav-home"
+              id="nav-categories"
               role="tabpanel"
               aria-labelledby="nav-home-tab"
               tabindex="0"
@@ -126,6 +234,107 @@
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+                <li class="list-group-item bg-dark text-white">
+                  <div class="option d-flex  justify-content-between">
+                    <a href=""
+                    class="text-white">
+                      <img src="./assets/assets/dot.webp" alt="" />
+                      Household Festival
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </li>
+
                 <li class="list-group-item bg-dark text-white">
                    <div class="option d-flex  justify-content-between">
                     <a href=""
@@ -203,7 +412,7 @@
             </div>
             <div
               class="tab-pane fade"
-              id="nav-profile"
+              id="nav-main-menu"
               role="tabpanel"
               aria-labelledby="nav-profile-tab"
               tabindex="0"
@@ -228,109 +437,6 @@
             </div>
           </div>
         </div>
-        <!--mobile view  -->
-        <div class="mobile-view d-flex d-block d-sm-none" style="width: 35%">
-          <div
-            class="wishlist d-flex flex-column justify-content-center align-items-center px-2 d-lg-none d-block"
-          >
-            <i class="fa-solid fa-bag-shopping text-white bag"></i>
-          </div>
-          <span class="delimiter d-lg-none d-block delimiter-nav mt-2"></span>
-          <div class="sign-up">
-            <a href="" class="text-white fw-light p-2">
-              <i class="fa-solid fa-user"></i>
-              Sign In
-            </a>
-          </div>
-        </div>
-        <form
-          class="d-lg-block d-block mt-2 mt-sm-0"
-          role="search"
-          style="width: 600px"
-        >
-          <div class="input-group">
-            <input
-              type="search"
-              class="form-control form-control-sm p-2"
-              placeholder="Search for"
-            />
-            <button type="submit" class="btn btn-sm btn-primary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                />
-              </svg>
-            </button>
-          </div>
-        </form>
-
-        <!-- Navbar right side -->
-        <div class="navbar-right-left d-flex justify-content-center d-block">
-          <!-- sign-up section -->
-          <div
-            class="signup-section d-flex justify-content-center align-items-center text-white"
-          >
-            <div class="sign-up d-lg-block d-none">
-              <a href="" class="text-white fw-light p-2">
-                <i class="fa-solid fa-user"></i>
-                Sign In
-              </a>
-            </div>
-            <span class="delimiter d-lg-block d-none"></span>
-            <div class="register fw-light p-2 d-lg-block d-none">
-              <a href="" class="text-white"> Register</a>
-            </div>
-          </div>
-
-          <!-- Border -->
-          <div class="border ms-2 mx-3 d-lg-block d-none"></div>
-          <!-- compare section -->
-          <div
-            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
-          >
-            <i class="fa-regular fa-heart text-white d-lg-block d-none"></i>
-            <span
-              class="fw-light text-center text-white d-lg-block d-none"
-              style="font-size: 13px"
-              >Wishlist</span
-            >
-          </div>
-
-          <div
-            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
-          >
-            <i
-              class="fa-solid fa-scale-balanced text-white d-lg-block d-none"
-            ></i>
-            <span
-              class="fw-light text-center text-white d-lg-block d-none"
-              style="font-size: 13px"
-              >Compare</span
-            >
-          </div>
-
-          <div
-            class="wishlist d-flex flex-column justify-content-center align-items-center px-2"
-          >
-            <i
-              class="fa-solid fa-bag-shopping text-white d-lg-block d-none"
-            ></i>
-            <span
-              class="fw-light text-center text-white d-lg-block d-none"
-              style="font-size: 13px"
-              >Cart</span
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
 
     <!-- Category Section -->
     <div class="container">
@@ -346,7 +452,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href=""
                 >Household <br />Festival</a
               >
@@ -365,10 +471,10 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href=""
                 >ONLINE TRADE <br />
-                FAIR</a
+                </a
               >
             </p>
           </div>
@@ -385,7 +491,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href=""
                 >SPECIAL WEEKLY <br />
                 OFFER</a
@@ -405,7 +511,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href=""
                 >Home and <br />
                 living</a
@@ -425,7 +531,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href=""
                 >Household <br />
                 Festival</a
@@ -445,7 +551,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -462,7 +568,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -478,7 +584,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -495,7 +601,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -512,7 +618,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -529,7 +635,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -546,7 +652,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name fw-bold">
+            <p class="category-name ">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -3235,7 +3341,7 @@
               </div>
             </div>
 
-            <div class="col-lg-5 text-sm-center m-sm-auto mb-2">
+            <div class="col-lg-5 text-sm-center m-sm-auto mb-3">
               <a class="btn btn-primary" href=""
                 >Download
                 <i class="fa-solid fa-arrow-down"></i>

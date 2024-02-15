@@ -1,74 +1,4 @@
-.category {
-  @include sm {
-    max-width: 20%;
-    margin-left: 2px;
-  }
-
-  &:hover .category-img {
-    border-width: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-  }
-
-  &-img {
-    border-radius: 50%;
-    border: 0px solid $white-color;
-    transition: box-shadow 0.1s;
-    min-width: 80px;
-
-      img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    vertical-align: middle;
-    @include sm {
-      max-width: 75%;
-    }
-  }
-  }
-
- 
-
- &-content {
-    align-items: center;
-    margin-left: 10px;
-    @include sm {
-      margin-left: 0px;
-    }
-
-    a:hover {
-      color: $sky-color;
-    }
-  }
-
-  &-content {
-    p {
-      font-weight: 400;
-      line-height: 1rem;
-      font-size: small;
-
-      @include sm {
-        font-size: 8px;
-      }
-    }
-    a {
-      color: $black-color;
-    }
-  }
-
-  .mobile-view {
-    i {
-      font-size: 10px;
-    }
-    a {
-      font-size: 14px;
-    }
-    .delimiter-nav {
-      margin-top: 10px;
-    }
-  }
-}
-
-.row.mobile-category {
+.mobile-category {
   @include sm {
     display: flex;
     flex-wrap: nowrap;
@@ -79,5 +9,61 @@
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+
+  .category {
+    @include sm {
+      max-width: 20%;
+      margin-left: 2px;
+    }
+
+    &:hover .category-img {
+      border-width: 8px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    &-img {
+      border-radius: 50%;
+      border: 0px solid $white-color;
+      transition: box-shadow 0.1s;
+      min-width: 80px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        vertical-align: middle;
+        @include sm {
+          max-width: 75%;
+        }
+      }
+    }
+
+    &-content {
+      align-items: center;
+      margin-left: 10px;
+      @include sm {
+        margin-left: 0px;
+      }
+
+      a:hover {
+        color: $sky-color;
+      }
+
+      p {
+        font-weight: 700;
+        line-height: 1rem;
+        font-size: 12px;
+
+        @include sm {
+          font-size: 8px;
+        }
+      }
+      a {
+        color: $black-color;
+      }
+    }
+
+    
   }
 }
