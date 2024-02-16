@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Popins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300;400&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font-awesome Link -->
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300;400&family=Poppins:wght@300;500&family=Roboto:wght@300&display=swap"
@@ -52,23 +59,22 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-3 sticky-sm-top" id="nav-container">
       <div class="container">
-         <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <a class="navbar-brand" href="#">
-          
           <img src="./assets/assets/asset 0.png" alt="" />
         </a>
 
         <!-- Offcanvas sider bar -->
-        
+
         <!--mobile view  -->
         <div class="mobile-view d-flex d-block d-sm-none" style="width: 35%">
           <div
@@ -173,270 +179,257 @@
       </div>
     </nav>
 
-     <!-- Offcanvas sider bar -->
-        <div
-          class="offcanvas offcanvas-sidebar offcanvas-start d-lg-none bg-dark"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-          style="width: 62%"
+    <!-- Offcanvas sider bar -->
+    <div
+      class="offcanvas offcanvas-sidebar offcanvas-start d-lg-none bg-dark"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+      style="width: 62%"
+    >
+      <button
+        type="button close-btn"
+        class="btn-close btn-close-white offcanvas-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+      <div
+        class="nav nav-tabs side-bar border-none bg-dark"
+        id="nav-tab"
+        role="tablist"
+      >
+        <a
+          class="nav-tab active bg-dark text-white p-2 px-3"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-categories"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
         >
-        <button type="button close-btn" class="btn-close btn-close-white offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          <div
-            class="nav nav-tabs side-bar border-none bg-dark"
-            id="nav-tab"
-            role="tablist"
-          >
-            <a
-              class="nav-tab active bg-dark text-white p-2 px-3"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-categories"
-              type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-            >
-              CATEGORIES
-            </a>
+          CATEGORIES
+        </a>
 
-            <a
-              class="nav-tab bg-dark text-white p-2 px-3"
-              id="nav-profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-main-menu"
-              type="button"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-            >
-              MAIN MENU
-            </a>
-          </div>
+        <a
+          class="nav-tab bg-dark text-white p-2 px-3"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-main-menu"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false"
+        >
+          MAIN MENU
+        </a>
+      </div>
 
-          <!-- Tab-content -->
-          <div class="tab-content tab-content-nav" id="nav-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="nav-categories"
-              role="tabpanel"
-              aria-labelledby="nav-home-tab"
-              tabindex="0"
-            >
-              <ul class="list-group list-group-flush bg-dark mt-3">
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Household Festival
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
+      <!-- Tab-content -->
+      <div class="tab-content tab-content-nav" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-categories"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <ul class="list-group list-group-flush bg-dark mt-3">
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Household Festival
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
 
-                <li class="list-group-item bg-dark text-white">
-                   <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Online Trade Fair
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                   <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Special Weekly Offer
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Furniture Big Saving Days
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                   <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Fashion
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Online Trade Fair
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Special Weekly Offer
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Furniture Big Saving Days
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Fashion
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
 
-                 <li class="list-group-item bg-dark text-white">
-                   <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Fashion
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Fashion
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
 
-                 <li class="list-group-item bg-dark text-white">
-                   <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Jewelleries & Accessories
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Jewelleries & Accessories
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
 
-                 <li class="list-group-item bg-dark text-white">
-                   <div class="option d-flex  justify-content-between">
-                    <a href=""
-                    class="text-white">
-                      <img src="./assets/assets/dot.webp" alt="" />
-                      Healthy & Beauty
-                    </a>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="nav-main-menu"
-              role="tabpanel"
-              aria-labelledby="nav-profile-tab"
-              tabindex="0"
-            >
-              <ul class="list-group list-group-flush bg-dark mt-3">
-                <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">Home</span>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">About Us</span>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">Contact Us</span>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">My Account</span>
-                </li>
-                <li class="list-group-item bg-dark text-white">
-                  <span class="fw-light">My wishlist</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+            <li class="list-group-item bg-dark text-white">
+              <div class="option d-flex justify-content-between">
+                <a href="" class="text-white">
+                  <img src="./assets/assets/dot.webp" alt="" />
+                  Healthy & Beauty
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </li>
+          </ul>
         </div>
+        <div
+          class="tab-pane fade"
+          id="nav-main-menu"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+          tabindex="0"
+        >
+          <ul class="list-group list-group-flush bg-dark mt-3">
+            <li class="list-group-item bg-dark text-white">
+              <span class="fw-light">Home</span>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <span class="fw-light">About Us</span>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <span class="fw-light">Contact Us</span>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <span class="fw-light">My Account</span>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <span class="fw-light">My wishlist</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- Category Section -->
     <div class="container">
@@ -452,7 +445,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href=""
                 >Household <br />Festival</a
               >
@@ -471,11 +464,8 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
-              <a class="text-decoration-none" href=""
-                >ONLINE TRADE <br />
-                </a
-              >
+            <p class="category-name">
+              <a class="text-decoration-none" href="">ONLINE TRADE <br /> </a>
             </p>
           </div>
         </div>
@@ -491,7 +481,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href=""
                 >SPECIAL WEEKLY <br />
                 OFFER</a
@@ -511,7 +501,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href=""
                 >Home and <br />
                 living</a
@@ -531,7 +521,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href=""
                 >Household <br />
                 Festival</a
@@ -551,7 +541,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -568,7 +558,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -584,7 +574,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -601,7 +591,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -618,7 +608,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -635,7 +625,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -652,7 +642,7 @@
             </a>
           </div>
           <div class="category-content text-center mt-2">
-            <p class="category-name ">
+            <p class="category-name">
               <a class="text-decoration-none" href="">Household Festival</a>
             </p>
           </div>
@@ -660,7 +650,7 @@
       </div>
     </div>
 
-    <!-- Splider Image -->
+    <!--first Splider Image -->
     <div class="container mt-3">
       <div class="row">
         <div class="col-lg-9 col-sm-12">
@@ -673,7 +663,7 @@
                     style="min-height: 530px"
                   >
                     <img
-                      class="rounded-3 img-fluid h-100"
+                      class="rounded-3 img-fluid h-100 object-fit-cover"
                       src="./assets/assets/asset 45.jpeg"
                       alt=""
                     />
@@ -752,8 +742,8 @@
       </div>
     </div>
 
-    <!-- Splider multiple-image -->
-    <div class="container border rounded-2 border-light-subtle p-2">
+    <!--Second Splider-image -->
+    <div class="container border rounded-2 border-secondary-subtle p-2">
       <div class="splide" id="icon-slider">
         <div class="splide__slider">
           <div class="splide__track">
@@ -892,8 +882,8 @@
       </div>
     </div>
 
-    <!-- Hot deals product -->
-    <section class="hot-deals mt-60">
+    <!-- Hot deals product  use js cowndown-->
+    <section class="hot-deals ">
       <div class="container">
         <div class="splide" id="hot-deals-day">
           <div class="splide__track">
@@ -912,7 +902,7 @@
                               class="countdown d-flex justify-content-center"
                               id="demo"
                             >
-                              <div class="timer-container d-flex gap-3">
+                              <div class="timer-container d-flex gap-5">
                                 <div class="timer-D">
                                   <span id="countdownDays"></span>
                                   <div>Days</div>
@@ -920,7 +910,7 @@
 
                                 <div class="timer-H">
                                   <span id="countdownHours"></span>
-                                  <div>Hrs</div>
+                                  <div class="">Hrs</div>
                                 </div>
 
                                 <div class="timer-M">
@@ -938,19 +928,35 @@
                             <img
                               src="./assets/assets/most-demanding-pendant-for-girls-and-women_300.webp"
                               alt=""
+                              class="img"
                             />
                           </div>
                           <div class="col-lg-6 col-sm-12">
-                            <div class="hot-deals-c">
+                            <div class="hot-deals-card">
                               <a href="" class="hot-deals-card-title">
                                 Most Demanding Pedant for Girls and Women
                               </a>
-                              <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                              <div class="rating" style="color: #ff9933">
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
                                 <a href="" class="reviews-count">
                                   (0 Reviews)
                                 </a>
@@ -962,12 +968,12 @@
                                 >
                               </div>
 
-                              <a href="" class="card-icon">
+                              <div href="" class="card-icon">
                                 <div
-                                  class="btn btn-outline-dark  me-1 rounded-0 px-4    "
+                                  class="btn btn-outline-dark btn-lg me-1 rounded-1 px-4  "
                                 >
-                                  <i class="fa-solid fa-bag-shopping"></i>
-                                  <span class="px-3 ">BUY NOW</span>
+                                  <i class="fa-solid fa-bag-shopping "></i>
+                                  <span class="px-3 buy ">BUY NOW</span>
                                 </div>
 
                                 <span class="icon1-color ms-3">
@@ -976,7 +982,7 @@
                                 <span class="icon2-color ms-3">
                                   <i class="fa-solid fa-scale-balanced"></i>
                                 </span>
-                              </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -997,9 +1003,8 @@
                             <!--timer-->
                             <div
                               class="countdown d-flex justify-content-center"
-                              id="demo"
                             >
-                              <div class="timer-container d-flex gap-3">
+                              <div class="timer-container d-flex gap-5">
                                 <div class="timer-D">
                                   <span id="countdownDays2"></span>
                                   <div>Days</div>
@@ -1028,14 +1033,23 @@
                             />
                           </div>
                           <div class="col-lg-6 col-sm-12">
-                            <div class="hot-deals-c ">
+                            <div class="hot-deals-card">
                               <a href="" class="hot-deals-card-title">
                                 Most Demanding Pedant for Girls and Women
                               </a>
                               <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <a href="" class="reviews-count">
@@ -1048,12 +1062,12 @@
                                   ><s>Tk 250</s></span
                                 >
                               </div>
-                              <a href="" class="card-icon">
+                              <div href="" class="card-icon">
                                 <div
-                                  class="btn btn-outline-dark  me-1 rounded-0 px-4 "
+                                  class="btn btn-outline-dark btn-lg me-1 rounded-1 px-4"
                                 >
                                   <i class="fa-solid fa-bag-shopping"></i>
-                                  <span class="px-3  ">BUY NOW</span>
+                                  <span class="px-3 buy">BUY NOW</span>
                                 </div>
                                 <span class="icon1-color ms-3">
                                   <i class="fa-solid fa-heart"></i>
@@ -1061,7 +1075,7 @@
                                 <span class="icon2-color ms-3">
                                   <i class="fa-solid fa-scale-balanced"></i>
                                 </span>
-                              </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1081,10 +1095,9 @@
                           <div class="col-lg-6 col-sm-12">
                             <!--timer-->
                             <div
-                              class="countdown d-flex justify-content-center"
-                              id="demo"
+                              class="countdown timmer d-flex justify-content-center"
                             >
-                              <div class="timer-container d-flex gap-3">
+                              <div class="timer-container d-flex gap-5">
                                 <div class="timer-D">
                                   <span id="countdownDays3"></span>
                                   <div>Days</div>
@@ -1110,14 +1123,20 @@
                             <img src="./assets/assets/shampoo.webp" alt="" />
                           </div>
                           <div class="col-lg-6 col-sm-12">
-                            <div class="hot-deals-c">
+                            <div class="hot-deals-card">
                               <a href="" class="hot-deals-card-title">
                                 Stone Finger Rings for Women and
                                 Girls(Imported)(M-FRC2023)-1Pcs
                               </a>
                               <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star"
+                                  style="color: #ff9933"
+                                ></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -1127,14 +1146,14 @@
                               </div>
                               <div class="price">
                                 <span class="new-price p-1">Tk 274</span>
-                                <span class="old-price"><s>Tk 350</s></span>
+                                <span class="old-price fw-light"><s>Tk 350</s></span>
                               </div>
-                              <a href="" class="card-icon">
+                              <div href="" class="card-icon">
                                 <div
-                                  class="btn btn-outline-dark  me-1 rounded-0 px-4 "
+                                  class="btn btn-outline-dark btn-lg me-1 rounded-1 px-4"
                                 >
                                   <i class="fa-solid fa-bag-shopping"></i>
-                                  <span class="px-3  ">BUY NOW</span>
+                                  <span class="px-3 buy ">BUY NOW</span>
                                 </div>
                                 <span class="icon1-color ms-3">
                                   <i class="fa-solid fa-heart"></i>
@@ -1142,7 +1161,7 @@
                                 <span class="icon2-color ms-3">
                                   <i class="fa-solid fa-scale-balanced"></i>
                                 </span>
-                              </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1163,9 +1182,8 @@
                             <!--timer-->
                             <div
                               class="countdown d-flex justify-content-center"
-                              id="demo"
                             >
-                              <div class="timer-container d-flex gap-3">
+                              <div class="timer-container d-flex gap-5">
                                 <div class="timer-D">
                                   <span id="countdownDays4"></span>
                                   <div>Days</div>
@@ -1194,7 +1212,7 @@
                             />
                           </div>
                           <div class="col-lg-6 col-sm-12">
-                            <div class="hot-deals-c">
+                            <div class="hot-deals-card">
                               <a href="" class="hot-deals-card-title">
                                 Valentine Couple Rings with Box for Women and
                                 Men-2Pcs(Grade-1)
@@ -1211,14 +1229,14 @@
                               </div>
                               <div class="price">
                                 <span class="new-price p-1">Tk 250</span>
-                                <span class="old-price"><s>Tk 400</s></span>
+                                <span class="old-price fw-light"><s>Tk 400</s></span>
                               </div>
-                              <a href="" class="card-icon">
+                              <div href="" class="card-icon">
                                 <div
-                                  class="btn btn-outline-dark btn-lg me-1 rounded-0 px-4 "
+                                  class="btn btn-outline btn-lg me-1 rounded-2 px-4"
                                 >
                                   <i class="fa-solid fa-bag-shopping"></i>
-                                  <span class="px-3  ">BUY NOW</span>
+                                  <span class="px-3 buy ">BUY NOW</span>
                                 </div>
                                 <span class="icon1-color ms-3">
                                   <i class="fa-solid fa-heart"></i>
@@ -1226,7 +1244,7 @@
                                 <span class="icon2-color ms-3">
                                   <i class="fa-solid fa-scale-balanced"></i>
                                 </span>
-                              </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1241,7 +1259,7 @@
       </div>
     </section>
 
-    <!-- Multiple product image  after hot deals use splid-->
+    <!-- Multiple product image  after hot deals use splide-->
     <div class="mt-5">
       <div class="container">
         <section
@@ -1258,7 +1276,6 @@
                       class=""
                       src="./assets/assets/small-squre-bag-collection-for-girls-and-women_100.webp"
                       alt=""
-                      width="200px"
                     />
                   </div>
                   <div class="grocery-details">
@@ -1286,11 +1303,7 @@
 
                 <div class="grocery-box d-flex align-items-center gap-2 py-2">
                   <div class="grocery-img">
-                    <img
-                      src="./assets/assets/vita-b3-source_100.jpeg"
-                      alt=""
-                      width="200px"
-                    />
+                    <img src="./assets/assets/vita-b3-source_100.jpeg" alt="" />
                   </div>
                   <div class="grocery-details">
                     <div class="grocery-content fw-light">
@@ -1323,7 +1336,6 @@
                       class=""
                       src="./assets/assets/velvet-texture-lipstick-easy-to-carry-_100.webp"
                       alt=""
-                      width="200px"
                     />
                   </div>
                   <div class="grocery-details">
@@ -1354,7 +1366,6 @@
                     <img
                       src="./assets/assets/most-beautiful-hair-clip-for-babys_100.webp"
                       alt=""
-                      width="200px"
                     />
                   </div>
                   <div class="grocery-details">
@@ -1387,7 +1398,6 @@
                       class=""
                       src="./assets/assets/sheuly-sanitary-napkin-belt-10-pads_100.jpeg"
                       alt=""
-                      width="200px"
                     />
                   </div>
                   <div class="grocery-details">
@@ -1418,7 +1428,6 @@
                     <img
                       src="./assets/assets/pcs-hair-clips-for-girls-and-women_100.webp"
                       alt=""
-                      width="200px"
                     />
                   </div>
                   <div class="grocery-details">
@@ -2053,8 +2062,6 @@
                     </div>
                   </div>
                 </div>
-
-                 
               </li>
               <li class="splide__slide">
                 <div class="card-box">
@@ -2105,8 +2112,6 @@
                     </div>
                   </div>
                 </div>
-
-                 
               </li>
               <li class="splide__slide">
                 <div class="card-box">
@@ -2157,8 +2162,6 @@
                     </div>
                   </div>
                 </div>
-
-                
               </li>
               <li class="splide__slide">
                 <div class="card-box">
@@ -2206,7 +2209,6 @@
                     </div>
                   </div>
                 </div>
-                
               </li>
             </ul>
           </div>

@@ -1,61 +1,105 @@
-.hot-deals-c {
-  margin-top: 50px;
-  @include sm {
-    margin-top: 10px;
+.hot-deals {
+  img {
+    @include sm {
+      width: 350px;
+    }
+  }
+  font-family: "popins", sans-serif;
+
+  .countdown {
+    .timer-container span {
+      font-size: 16px;
+      font-weight: 600;
+
+      div {
+      }
+    }
+    transition: visibility 1.5s ease;
+    opacity: 1;
+
+    &:hover {
+      visibility: hidden;
+      opacity: 0;
+    }
+    position: absolute;
+    width: 45%;
+
+    top: 68%;
+    @include sm {
+      top: 47%;
+    }
+    margin-left: 15px;
+    padding: 7px;
+    color: $white-color;
+    background-color: #373636d2;
+    text-align: center;
+
+    @include sm {
+      width: 85%;
+    }
   }
 
+  .hot-deals-card {
+    margin-top: 50px;
+    .hot-deals-card-title {
+      line-height: 2px;
+      font-size: 18px;
+      font-weight: 600;
+
+      &:hover {
+        color: $sky-color;
+      }
+    }
+
+    .rating {
+      font-size: 13px;
+      margin-top: 7px;
+      @include sm {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .price {
+    margin-top: 6px;
+    margin-bottom: 7px;
+    @include sm {
+      margin-top: 3px;
+      margin-bottom: 8px;
+    }
+    .new-price {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .old-price {
+      font-size: 20px;
+    }
+  }
   .card-icon {
-    margin-top: 10px;
-  }
+    margin-top: 20px;
+    .btn {
+      --bs-btn-hover-bg: rgb(81, 199, 242);
+      padding: 7px 12px;
+      border: 2px solid black;
+      border-radius: 10px;
 
-  .hot-deals-card-title {
-    @include sm {
-      font-size: 15px;
+      .buy {
+        @include sm {
+          display: none;
+        }
+      }
+    }
+    .icon1-color {
+      &:hover {
+        color: $sky-color;
+      }
+    }
+
+    .icon2-color {
+      &:hover {
+        color: $sky-color;
+      }
     }
   }
-
-  .rating {
-    @include sm {
-      font-size: 10px;
-    }
-  }
-
-  .new-price {
-    font-size: 23px;
-    @include sm {
-      font-size: 15px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-  }
-}
-
-#demo {
-  // border: 2px solid red;
-  position: absolute;
-  width: 43%;
-  // top:75%;
-  top: 65%;
-  @include sm {
-    top: 42%;
-  }
-  margin-left: 15px;
-  padding: 18px;
-  color: $white-color;
-  background-color: #373636d2;
-  text-align: center;
-
-  @include sm {
-    width: 75%;
-  }
-  // opacity: 2;
-}
-
-.countdown {
-  transition: visibility 0.5s ease;
-  opacity: 1;
-}
-.countdown:hover {
-  visibility: hidden;
-  opacity: 0;
 }

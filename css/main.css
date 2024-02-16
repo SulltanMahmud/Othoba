@@ -482,10 +482,6 @@ ul span {
   font-weight: 600;
 }
 
-.splide__pagination__page {
-  bottom: -40px;
-}
-
 #weekly-brand .splide__pagination__page.is-active {
   background-color: #439ddf;
   width: 14px;
@@ -593,7 +589,11 @@ body {
 
 #first-splide .splide__pagination__page {
   background-color: #fff;
-  bottom: 9px;
+  bottom: 30px;
+  width: 8.05px;
+  height: 8.05px;
+  padding: 0;
+  border: 0.8px solid white;
 }
 
 .nav-link {
@@ -679,68 +679,101 @@ body {
   }
 }
 
-.hot-deals-c {
-  margin-top: 50px;
+.hot-deals {
+  font-family: "popins", sans-serif;
 }
 @media only screen and (max-width: 576px) {
-  .hot-deals-c {
-    margin-top: 10px;
+  .hot-deals img {
+    width: 350px;
   }
 }
-.hot-deals-c .card-icon {
-  margin-top: 10px;
-}
-@media only screen and (max-width: 576px) {
-  .hot-deals-c .hot-deals-card-title {
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .hot-deals-c .rating {
-    font-size: 10px;
-  }
-}
-.hot-deals-c .new-price {
-  font-size: 23px;
-}
-@media only screen and (max-width: 576px) {
-  .hot-deals-c .new-price {
-    font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-}
-
-#demo {
+.hot-deals .countdown {
+  -webkit-transition: visibility 1.5s ease;
+  transition: visibility 1.5s ease;
+  opacity: 1;
   position: absolute;
-  width: 43%;
-  top: 65%;
+  width: 45%;
+  top: 68%;
   margin-left: 15px;
-  padding: 18px;
+  padding: 7px;
   color: #fff;
   background-color: rgba(55, 54, 54, 0.8235294118);
   text-align: center;
 }
-@media only screen and (max-width: 576px) {
-  #demo {
-    top: 42%;
-  }
+.hot-deals .countdown .timer-container span {
+  font-size: 16px;
+  font-weight: 600;
 }
-@media only screen and (max-width: 576px) {
-  #demo {
-    width: 75%;
-  }
-}
-
-.countdown {
-  -webkit-transition: visibility 0.5s ease;
-  transition: visibility 0.5s ease;
-  opacity: 1;
-}
-
-.countdown:hover {
+.hot-deals .countdown:hover {
   visibility: hidden;
   opacity: 0;
+}
+@media only screen and (max-width: 576px) {
+  .hot-deals .countdown {
+    top: 47%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hot-deals .countdown {
+    width: 85%;
+  }
+}
+.hot-deals .hot-deals-card {
+  margin-top: 50px;
+}
+.hot-deals .hot-deals-card .hot-deals-card-title {
+  line-height: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.hot-deals .hot-deals-card .hot-deals-card-title:hover {
+  color: #439ddf;
+}
+.hot-deals .hot-deals-card .rating {
+  font-size: 13px;
+  margin-top: 7px;
+}
+@media only screen and (max-width: 576px) {
+  .hot-deals .hot-deals-card .rating {
+    margin-top: 5px;
+  }
+}
+.hot-deals .price {
+  margin-top: 6px;
+  margin-bottom: 7px;
+}
+@media only screen and (max-width: 576px) {
+  .hot-deals .price {
+    margin-top: 3px;
+    margin-bottom: 8px;
+  }
+}
+.hot-deals .price .new-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+.hot-deals .price .old-price {
+  font-size: 20px;
+}
+.hot-deals .card-icon {
+  margin-top: 20px;
+}
+.hot-deals .card-icon .btn {
+  --bs-btn-hover-bg: rgb(81, 199, 242);
+  padding: 7px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 576px) {
+  .hot-deals .card-icon .btn .buy {
+    display: none;
+  }
+}
+.hot-deals .card-icon .icon1-color:hover {
+  color: #439ddf;
+}
+.hot-deals .card-icon .icon2-color:hover {
+  color: #439ddf;
 }
 
 .vendor-details .vendor-personal h4 {

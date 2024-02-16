@@ -1,4 +1,3 @@
-
 // Navbar jump
 const navbar = document.getElementById("nav-container");
 let scrolled = false;
