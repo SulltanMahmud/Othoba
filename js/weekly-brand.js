@@ -8,7 +8,7 @@ const weeklybrand = new Splide("#weekly-brand", {
   autoplay: true,
   interval: 2000,
   gap: "1rem",
-  focus: "center",
+  // focus: "center",
 
   breakpoints: {
     576: {
