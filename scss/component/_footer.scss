@@ -1,7 +1,7 @@
 .widget {
   &.widget-about {
     a:hover {
-      color: #1914fe;
+      color: $hover-color;
       cursor: pointer;
       text-decoration: none;
     }
@@ -23,20 +23,22 @@
     transition: opacity 0.3s;
     color: #333;
     padding: 0;
-    color: #666;
+    color: $list-item-color;
 
     ul {
       padding-left: 1.5em;
-
-      span {
-        font-size: 13px;
-        font-weight: 600;
-      }
     }
 
     li {
       line-height: 0.5;
       margin-bottom: 1.5rem;
+      a:hover {
+        color: $hover-color;
+      }
+      span {
+        font-size: 13px;
+        font-weight: 600;
+      }
     }
 
     .social-icon {
@@ -54,5 +56,3 @@
     }
   }
 }
-
-//  2nd section

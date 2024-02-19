@@ -440,13 +440,16 @@ a {
 .widget .widget-body ul {
   padding-left: 1.5em;
 }
-.widget .widget-body ul span {
-  font-size: 13px;
-  font-weight: 600;
-}
 .widget .widget-body li {
   line-height: 0.5;
   margin-bottom: 1.5rem;
+}
+.widget .widget-body li a:hover {
+  color: #1914fe;
+}
+.widget .widget-body li span {
+  font-size: 13px;
+  font-weight: 600;
 }
 .widget .widget-body .social-icon {
   display: -webkit-inline-box;
@@ -747,7 +750,7 @@ a {
 .hot-deals .card-icon .btn {
   --bs-btn-hover-bg: rgb(81, 199, 242);
   padding: 7px 12px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 10px;
 }
 @media only screen and (max-width: 576px) {
