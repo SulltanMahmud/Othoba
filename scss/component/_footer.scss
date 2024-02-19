@@ -1,92 +1,58 @@
-.widget-about {
-  a:hover {
-    color: #1914fe;
-    cursor: pointer;
-    text-decoration: none;
+.widget {
+  &.widget-about {
+    a:hover {
+      color: #1914fe;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .logo-footer {
+      margin-bottom: 2rem;
+    }
   }
 
-  .social-icons a {
-    text-decoration: none;
+  .widget-body {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    opacity: 1;
+    transition: opacity 0.3s;
+    color: #333;
+    padding: 0;
+    color: #666;
+
+    ul {
+      padding-left: 1.5em;
+
+      span {
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+
+    li {
+      line-height: 0.5;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: $sky-color;
+      color: aliceblue;
+      height: 35px;
+      padding: 10px;
+      border-radius: 50%;
+      width: 35px;
+      align-items: center;
+      justify-content: center;
+    }
   }
-
-  .logo-footer {
-    margin-bottom: 2rem;
-  }
-}
-
-//   Last footer
-.footer-part {
-  .footer a:active,
-  .footer a:hover {
-    cursor: pointer;
-    color: $sky-color;
-  }
-}
-
-.logo {
-  min-width: 14.4rem;
-  margin-right: 2rem;
-}
-
-.footer a.active,
-.footer a:active,
-.footer a:hover {
-  cursor: pointer;
-  color:$sky-color;
-}
-
-.social-icon {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: $sky-color;
-  color: aliceblue;
-  height: 35px;
-  padding: 10px;
-  border-radius: 50%;
-  width: 35px;
-  align-items: center;
-  justify-content: center;
 }
 
 //  2nd section
-
-ul {
-  padding-left: 1.5em;
-}
-
-.widget-body {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  opacity: 1;
-  transition: opacity 0.3s;
-  color: #333;
-  padding: 0;
-  color: #666;
-
-  li {
-    line-height: 0.5;
-    margin-bottom: 1.5rem;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.footer a {
-  color: #666;
-}
-
-a:hover {
-  color: #1914fe;
-  cursor: pointer;
-}
-
-ul span {
-  font-size: 13px;
-  font-weight: 600;
-}

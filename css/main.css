@@ -27,6 +27,13 @@ body {
   font-size: 11px;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
 .offcanvas-sidebar .side-bar a {
   font-size: 14px;
 }
@@ -218,6 +225,13 @@ body {
   font-size: 11px;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
 .product-buy a:hover {
   background-color: #4c87fc;
 }
@@ -401,37 +415,40 @@ body {
   --bs-btn-bg: #439ddf;
 }
 
-.widget-about a:hover {
+.widget.widget-about a:hover {
   color: #1914fe;
   cursor: pointer;
   text-decoration: none;
 }
-.widget-about .social-icons a {
+.widget.widget-about .social-icons a {
   text-decoration: none;
 }
-.widget-about .logo-footer {
+.widget.widget-about .logo-footer {
   margin-bottom: 2rem;
 }
-
-.footer-part .footer a:active,
-.footer-part .footer a:hover {
-  cursor: pointer;
-  color: #439ddf;
+.widget .widget-body {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  color: #333;
+  padding: 0;
+  color: #666;
 }
-
-.logo {
-  min-width: 14.4rem;
-  margin-right: 2rem;
+.widget .widget-body ul {
+  padding-left: 1.5em;
 }
-
-.footer a.active,
-.footer a:active,
-.footer a:hover {
-  cursor: pointer;
-  color: #439ddf;
+.widget .widget-body ul span {
+  font-size: 13px;
+  font-weight: 600;
 }
-
-.social-icon {
+.widget .widget-body li {
+  line-height: 0.5;
+  margin-bottom: 1.5rem;
+}
+.widget .widget-body .social-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -450,47 +467,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-ul {
-  padding-left: 1.5em;
-}
-
-.widget-body {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  color: #333;
-  padding: 0;
-  color: #666;
-}
-.widget-body li {
-  line-height: 0.5;
-  margin-bottom: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.footer a {
-  color: #666;
-}
-
-a:hover {
-  color: #1914fe;
-  cursor: pointer;
-}
-
-ul span {
-  font-size: 13px;
-  font-weight: 600;
 }
 
 #weekly-brand .splide__pagination__page.is-active {
@@ -540,6 +516,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 11px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 #nav-container {

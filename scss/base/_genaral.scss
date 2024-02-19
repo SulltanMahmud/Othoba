@@ -1,20 +1,19 @@
 // Text-decoration
 
-.text-decoration{
-    text-decoration: none;
-    color:$black-color;
+.text-decoration {
+  text-decoration: none;
+  color: $black-color;
 }
 
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-   font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  background:$white-color
+  background: $white-color;
 }
 
 .header-items {
@@ -24,6 +23,10 @@ body {
   font-size: 11px;
 }
 
-// Variable
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
 
- 
+// Variable
