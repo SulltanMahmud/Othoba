@@ -342,6 +342,15 @@ a {
           align-items: center;
   margin-right: 70px;
 }
+.subscribe-container .icon-box .icon-box-img .msg-icon {
+  font-size: 49px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 576px) {
+  .subscribe-container .icon-box .icon-box-img .msg-icon {
+    font-weight: 300;
+  }
+}
 @media only screen and (max-width: 576px) {
   .subscribe-container .icon-box {
     -webkit-box-orient: vertical;
@@ -364,23 +373,14 @@ a {
     font-weight: 500;
   }
 }
-.subscribe-container p {
+.subscribe-container .icon-content p {
   font-size: 13px;
   margin-bottom: 0.5rem;
   padding: 0.1rem;
 }
 @media only screen and (max-width: 576px) {
-  .subscribe-container p {
+  .subscribe-container .icon-content p {
     font-size: 11px;
-  }
-}
-.subscribe-container .icon {
-  font-size: 40px;
-  margin-right: 20px;
-}
-@media only screen and (max-width: 576px) {
-  .subscribe-container .icon {
-    font-weight: 300;
   }
 }
 .subscribe-container .icon-box-right {
@@ -406,10 +406,6 @@ a {
   .subscribe-container .icon-box-right a {
     margin-left: auto;
   }
-}
-.subscribe-container .msg-icon {
-  font-size: 60px;
-  font-weight: 400;
 }
 .subscribe-container .btn-primary {
   --bs-btn-bg: #439ddf;
@@ -473,18 +469,6 @@ a {
 }
 
 #weekly-brand .splide__pagination__page.is-active {
-  background-color: #439ddf;
-  width: 14px;
-  height: 7px;
-  border: 1px;
-  border-radius: 5px;
-}
-
-#first-splide .splide__pagination__page {
-  margin-left: 10px;
-  padding: 5px;
-}
-#first-splide .splide__pagination__page.is-active {
   background-color: #439ddf;
   width: 14px;
   height: 7px;
@@ -583,6 +567,13 @@ a {
   height: 8.05px;
   padding: 0;
   border: 0.8px solid white;
+}
+#first-splide .splide__pagination__page.is-active {
+  background-color: #439ddf;
+  width: 14px;
+  height: 7px;
+  border: 1px;
+  border-radius: 5px;
 }
 
 .nav-link {

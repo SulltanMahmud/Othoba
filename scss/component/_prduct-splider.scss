@@ -1,48 +1,39 @@
-.product{
-    &-buy a:hover{
-        background-color:#4c87fc;
+.product {
+  &-buy a:hover {
+    background-color: #4c87fc;
+  }
+
+  &-buy a {
+    border: 2px solid black;
+  }
+
+  &-icon {
+    .hover:hover {
+      color: #4c87fc;
     }
+  }
+  &-title a {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    line-height: 0.9rem;
+  }
 
-    &-buy a{
-        border: 2px solid black;
+  &-title a:hover {
+    color: #4c87fc;
+  }
+
+  &-img {
+    position: relative;
+
+    .launch-container {
+      position: absolute;
+      left: 10px;
+      bottom: 20px;
+      background-color: rgba(128, 128, 128, 0.438);
+      width: 280px;
     }
-
-    &-icon {
-         .hover:hover{
-            color: #4c87fc;
-         }
-    }
-    &-title a{
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        text-decoration: none;
-        color: black;
-        line-height: 0.9rem;
-
-        
-       
-    }
-
-    &-title a:hover{
-        color:#4c87fc;
-        
-    }
-
-    &-img{
-        position: relative;
-
-        .launch-container{
-            position: absolute;
-            left: 10px;
-            bottom: 20px;
-            background-color: rgba(128, 128, 128, 0.438);
-            width: 280px;
-             
-        }
-
-
-    }
-
-     
+  }
 }

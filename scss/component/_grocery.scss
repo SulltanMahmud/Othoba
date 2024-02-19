@@ -1,18 +1,17 @@
-.grocery{
-    
-    &-content{
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 15.55px;
-    }
+.grocery {
+  &-content {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.55px;
+  }
 
-    &-rating{
-        font-size: 12px;
-        
-        line-height: 12px;
-         color: darkgray;
-    }
-    &-price{
-        font-weight: 800;
-    }
+  &-rating {
+    font-size: 12px;
+
+    line-height: 12px;
+    color: darkgray;
+  }
+  &-price {
+    font-weight: 800;
+  }
 }
