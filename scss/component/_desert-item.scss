@@ -41,3 +41,14 @@
     font-weight: 600;
   }
 }
+
+#desert .splide__pagination__page {
+  bottom: -25px;
+  &.is-active {
+    background-color: $sky-color;
+    width: 14px;
+    height: 7px;
+    border: 1px;
+    border-radius: 5px;
+  }
+}

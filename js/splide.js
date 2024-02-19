@@ -69,7 +69,7 @@ const desert = new Splide("#desert", {
   pagination: true,
   type: "loop",
   perPage: 4,
-  autoplay: false,
+  autoplay: true,
   interval: 2000,
   gap: 10,
   perMove: 1,
