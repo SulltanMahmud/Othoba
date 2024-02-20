@@ -747,6 +747,9 @@ a {
   border: 2px solid #000000;
   border-radius: 10px;
 }
+.hot-deals .card-icon .btn .buy {
+  font-size: 14px;
+}
 @media only screen and (max-width: 576px) {
   .hot-deals .card-icon .btn .buy {
     display: none;

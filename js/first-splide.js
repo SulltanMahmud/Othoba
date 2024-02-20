@@ -1,5 +1,5 @@
 // First slide
-var splide = new Splide("#first-splide", {
+var firstsplide = new Splide("#first-splide", {
   type: "loop",
   perPage: 1,
   autoplay: true,
@@ -7,4 +7,4 @@ var splide = new Splide("#first-splide", {
   interval: 2000,
 });
 
-splide.mount();
+firstsplide.mount();
