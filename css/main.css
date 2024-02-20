@@ -523,14 +523,18 @@ a {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-#nav-container .mobile-view i {
-  font-size: 10px;
+#nav-container .mobile-view .wishlist i {
+  font-size: 20px;
 }
-#nav-container .mobile-view a {
-  font-size: 14px;
-}
-#nav-container .mobile-view .delimiter-nav {
+#nav-container .mobile-view .delimiter {
   margin-top: 10px;
+  width: 1.5px;
+  height: 15px;
+  background-color: #fff;
+  margin: auto;
+}
+#nav-container .mobile-view .sign-up a {
+  font-size: 14px;
 }
 @media only screen and (max-width: 576px) {
   #nav-container .mobile-view .sign-up {

@@ -7,17 +7,24 @@
   );
   transition: transform 0.3s ease;
   .mobile-view {
-    i {
-      font-size: 10px;
+    .wishlist {
+      i {
+        font-size: 20px;
+      }
     }
-    a {
-      font-size: 14px;
-    }
-    .delimiter-nav {
+
+    .delimiter {
       margin-top: 10px;
+      width: 1.5px;
+      height: 15px;
+      background-color: #fff;
+      margin: auto;
     }
 
     .sign-up {
+      a {
+        font-size: 14px;
+      }
       @include sm {
         font-size: 13px;
         margin-top: 3px;
@@ -34,7 +41,7 @@
       .small-border {
         border: 1px solid white;
         height: 10px;
-        //   padding: 0 6px;
+ 
       }
     }
   }
