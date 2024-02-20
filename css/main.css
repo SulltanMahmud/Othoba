@@ -45,6 +45,7 @@ a {
 }
 .offcanvas-sidebar .side-bar.nav.nav-tabs .nav-tab.active {
   border-bottom: 2px solid #439ddf;
+  color: #439ddf !important;
 }
 .offcanvas-sidebar.offcanvas .offcanvas-close {
   position: fixed;
