@@ -7,38 +7,41 @@
     flex-direction: column;
   }
 
-  &-img i {
+  i {
     font-size: 40px;
     margin-right: 20px;
     @include sm {
       font-size: 2rem;
+      margin-right: unset;
     }
   }
 
-  &-content h4 {
-    font-size: 14px;
-    cursor: pointer;
-    margin-bottom: 0;
-
-    @include sm {
-      font-size: 12px;
-    }
-  }
-
-  &-content p {
-    font-size: 13px;
-    cursor: pointer;
-    font-weight: 300;
-    text-align: center;
-
-    @include sm {
-      font-size: 8px;
-    }
-  }
   &-content {
     margin-top: 10px;
     @include sm {
       margin-top: 5px;
+    }
+
+    p {
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 300;
+      text-align: center;
+
+      @include sm {
+        font-size: 12px;
+      }
+    }
+
+    h4 {
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 0;
+      
+      @include sm {
+        font-size: 14px;
+         
+      }
     }
   }
 }

@@ -1,9 +1,4 @@
 .hot-deals {
-  img {
-    @include sm {
-      width: 350px;
-    }
-  }
   font-family: "popins", sans-serif;
 
   .countdown {
@@ -37,6 +32,12 @@
   }
 
   .hot-deals-card {
+    img {
+      @include sm {
+        width: 350px;
+      }
+    }
+
     margin-top: 50px;
     .hot-deals-card-title {
       line-height: 2px;
