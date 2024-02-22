@@ -59,7 +59,8 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .offcanvas-sidebar .tab-content-nav ul .option i {
-    font-size: 10px;
+    font-size: 8px;
+    opacity: 0.4;
   }
 }
 
