@@ -217,12 +217,10 @@ a {
   font-size: 14px;
   cursor: pointer;
   margin-bottom: 0;
-  font-weight: 800;
 }
 @media only screen and (max-width: 576px) {
   .item-content h4 {
     font-size: 14px;
-    font-weight: 800;
   }
 }
 
@@ -293,44 +291,44 @@ a {
   width: 280px;
 }
 
-.card-body .card-title {
+.card-box .title {
+  padding-bottom: 8px;
+}
+@media only screen and (max-width: 576px) {
+  .card-box .title {
+    padding-bottom: 2px;
+  }
+}
+.card-box .title .card-title {
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
 }
-.card-body .title {
-  padding-bottom: 8px;
-}
-@media only screen and (max-width: 576px) {
-  .card-body .title {
-    padding-bottom: 2px;
-  }
-}
-.card-body .product-rating-desert i {
+.card-box .product-popularity .product-rating-desert i {
   font-size: 13px;
 }
 @media only screen and (max-width: 576px) {
-  .card-body .product-rating-desert i {
+  .card-box .product-popularity .product-rating-desert i {
     font-size: 8px;
   }
 }
-.card-body .product-review-desert span {
+.card-box .product-popularity .product-review-desert span {
   font-size: 13px;
 }
 @media only screen and (max-width: 576px) {
-  .card-body .product-review-desert span {
+  .card-box .product-popularity .product-review-desert span {
     font-size: 10px;
   }
 }
-.card-body .product-price-desert span {
+.card-box .product-price-desert span {
   font-size: 13px;
   font-weight: 600;
 }
-.card-body .product-price-desert span .product-amount-desert h5 {
+.card-box .product-price-desert span .product-amount-desert h5 {
   font-size: 16px;
   font-weight: 600;
 }
-.card-body .discount {
+.card-box .discount {
   font-size: 16px;
   font-weight: 600;
 }
@@ -612,6 +610,14 @@ a {
   border: 1px;
   border-radius: 5px;
 }
+#first-splide .splider__slide {
+  min-height: 530px;
+}
+@media only screen and (max-width: 576px) {
+  #first-splide .splider__slide {
+    min-height: 200px;
+  }
+}
 
 .nav-link {
   font-size: 13px;
@@ -632,6 +638,8 @@ a {
   background-color: #3498db;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -712,9 +720,9 @@ a {
   background-color: rgba(55, 54, 54, 0.8235294118);
   text-align: center;
 }
-.hot-deals .countdown .timer-container span {
+.hot-deals .countdown .timer-container .timer-D {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .hot-deals .countdown:hover {
   visibility: hidden;

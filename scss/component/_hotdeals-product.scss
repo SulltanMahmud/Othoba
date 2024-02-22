@@ -2,9 +2,11 @@
   font-family: "popins", sans-serif;
 
   .countdown {
-    .timer-container span {
-      font-size: 16px;
-      font-weight: 600;
+    .timer-container {
+      .timer-D {
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
     transition: visibility 1.5s ease;
     opacity: 1;

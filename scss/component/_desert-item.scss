@@ -1,28 +1,30 @@
-.card-body {
-  .card-title {
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-  }
-
+.card-box {
   .title {
     padding-bottom: 8px;
     @include sm {
       padding-bottom: 2px;
     }
-  }
 
-  .product-rating-desert i {
-    font-size: 13px;
-    @include sm {
-      font-size: 8px;
+    .card-title {
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
     }
   }
 
-  .product-review-desert span {
-    font-size: 13px;
-    @include sm {
-      font-size: 10px;
+  .product-popularity {
+    .product-rating-desert i {
+      font-size: 13px;
+      @include sm {
+        font-size: 8px;
+      }
+    }
+
+    .product-review-desert span {
+      font-size: 13px;
+      @include sm {
+        font-size: 10px;
+      }
     }
   }
 

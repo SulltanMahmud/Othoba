@@ -1,6 +1,7 @@
-#first-splide .splide__pagination__page{
-     background-color:$white-color;
-      
+#first-splide {
+  .splide__pagination__page {
+    background-color: $white-color;
+
     bottom: 30px;
     width: 8.05px;
     height: 8.05px;
@@ -8,13 +9,19 @@
     border: 0.8px solid white;
 
     &.is-active {
-    background-color: $sky-color;
-    width: 14px;
-    height: 7px;
-    border: 1px;
-    border-radius: 5px;
+      background-color: $sky-color;
+      width: 14px;
+      height: 7px;
+      border: 1px;
+      border-radius: 5px;
+    }
+  }
+
+  .splider__slide {
+    min-height: 530px;
+
+    @include sm {
+      min-height: 200px;
+    }
   }
 }
-
- 
-     
