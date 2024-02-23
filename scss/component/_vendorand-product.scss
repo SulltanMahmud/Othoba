@@ -11,3 +11,10 @@
         }
     }
 }
+
+.vendor-product-img{
+    @include sm{
+        display:  flex;
+        justify-content: space-between;
+    }
+}

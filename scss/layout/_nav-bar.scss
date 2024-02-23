@@ -6,6 +6,17 @@
     rgb(29, 95, 171) 100%
   );
   transition: transform 0.3s ease;
+  form {
+    width: 600px;
+    @include md {
+      width: 200px;
+    }
+
+    @include sm {
+      width: 600px;
+    }
+  }
+
   .mobile-view {
     .wishlist {
       i {

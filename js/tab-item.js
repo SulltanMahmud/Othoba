@@ -62,10 +62,10 @@ const newarrival1 = new Splide("#newarrival-1", {
   arrows: false,
   pagination: false,
   type: "loop",
-  perPage: 4,
+  perPage: 5,
   autoplay: true,
   interval: 2000,
-  gap: 20,
+  gap: 10,
 
   breakpoints: {
     576: {
@@ -82,10 +82,10 @@ const feature = new Splide("#feature", {
   arrows: false,
   pagination: false,
   type: "loop",
-  perPage: 4,
+  perPage: 5,
   autoplay: true,
   interval: 2000,
-  gap: 20,
+  gap: 10,
 
   breakpoints: {
     576: {
