@@ -12,7 +12,7 @@
     }
   }
 
-  @include md{
+  @include md {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -26,12 +26,17 @@
   }
 
   .category {
+    &.category-firstchild {
+      @include md {
+        margin-left: unset;
+      }
+    }
     @include sm {
       max-width: 20% !important;
       margin-left: 2px !important;
     }
 
-    @include md{
+    @include md {
       margin-left: 30px;
       max-width: 35%;
     }
@@ -89,19 +94,19 @@
         font-weight: 700;
         line-height: 1rem;
         font-size: 12px;
-       
 
         @include sm {
           font-size: 8px;
         }
 
-        @include md{
+        @include md {
           font-size: 10px;
           margin-left: 5px;
         }
-      }
-      a {
-        color: $black-color;
+
+        a {
+          color: $black-color;
+        }
       }
     }
   }

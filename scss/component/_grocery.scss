@@ -4,7 +4,7 @@
     font-weight: 500;
     line-height: 15.55px;
 
-    @include md{
+    @include md {
       font-size: 11px;
     }
   }
@@ -14,20 +14,21 @@
 
     line-height: 12px;
     color: darkgray;
-    @include md{
+    @include md {
       font-size: 8px;
     }
   }
   &-price {
     font-weight: 800;
 
-    @include md{
+    @include md {
       font-size: 12px;
     }
-  }
-  span{
-    @include md{
-      font-size: 10px;
+
+    span {
+      @include md {
+        font-size: 10px;
+      }
     }
   }
 }

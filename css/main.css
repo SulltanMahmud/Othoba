@@ -96,6 +96,11 @@ a {
     display: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  .mobile-category .category.category-firstchild {
+    margin-left: unset;
+  }
+}
 @media only screen and (max-width: 576px) {
   .mobile-category .category {
     max-width: 20% !important;
@@ -189,7 +194,7 @@ a {
     margin-left: 5px;
   }
 }
-.mobile-category .category-content a {
+.mobile-category .category-content .category-name a {
   color: #000000;
 }
 
@@ -666,7 +671,7 @@ a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .grocery span {
+  .grocery-price span {
     font-size: 10px;
   }
 }
