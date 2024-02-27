@@ -13,6 +13,14 @@ const mostPopularSplide = new Splide("#most-popular", {
       perPage: 2,
       perMove: 1,
     },
+
+    992: {
+      perPage: 4,
+    },
+
+    1200: {
+      perPage: 4,
+    },
   },
 });
 

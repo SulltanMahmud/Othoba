@@ -15,6 +15,14 @@ const weeklybrand = new Splide("#weekly-brand", {
       perPage: 1,
       perMove: 1,
     },
+
+    992: {
+      perPage: 3,
+    },
+
+    1200: {
+      perPage: 3,
+    },
   },
 });
 

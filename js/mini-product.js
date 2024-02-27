@@ -13,10 +13,12 @@ const afterhotdealsplide = new Splide("#afterhotdealsplide", {
     576: {
       perPage: 1,
     },
-  },
 
-  breakpoints: {
-    768: {
+    992: {
+      perPage: 2,
+    },
+
+    1200: {
       perPage: 3,
     },
   },

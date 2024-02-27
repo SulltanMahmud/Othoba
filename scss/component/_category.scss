@@ -27,8 +27,8 @@
 
   .category {
     @include sm {
-      max-width: 20%;
-      margin-left: 2px;
+      max-width: 20% !important;
+      margin-left: 2px !important;
     }
 
     @include md{

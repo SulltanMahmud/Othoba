@@ -1,6 +1,18 @@
-.vendor-details{
+.vendor{
+    .vendor-details{
     .vendor-personal h4{
             font-size: 16px;
+            @include md{
+                font-size: 12px;
+            }
+
+
+            .vendor-product-count{
+                @include md{
+                    font-size: 10px;
+                }
+            }
+
 
              
     }
@@ -9,12 +21,28 @@
         @include sm{
             font-size: 9px;
         }
+        @include md{
+            font-size: 10px;
+        }
     }
 }
+}
+
+ 
 
 .vendor-product-img{
     @include sm{
         display:  flex;
         justify-content: space-between;
+    }
+
+     @include md{
+        display:  flex;
+        justify-content: space-between;
+    }
+    img{
+        @include md{
+            width: 30%;
+        }
     }
 }

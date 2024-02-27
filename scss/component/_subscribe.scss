@@ -44,6 +44,14 @@
       @include sm {
         font-size: 11px;
       }
+
+      @include md {
+        font-size: 11px;
+      }
+    }
+
+    @include md {
+      margin-right: 10px;
     }
   }
 
@@ -58,7 +66,11 @@
 
     a {
       @include sm {
-        margin-left: auto;
+        margin-left: 70px !important;
+      }
+
+      @include md {
+        margin-right: 85px;
       }
     }
   }

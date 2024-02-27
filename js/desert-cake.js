@@ -3,6 +3,7 @@ const desert = new Splide("#desert", {
   pagination: true,
   type: "loop",
   perPage: 4,
+
   autoplay: true,
   interval: 2000,
   gap: 10,
@@ -13,13 +14,21 @@ const desert = new Splide("#desert", {
       gap: 10,
       perMove: 1,
     },
-  },
 
-  breakpoints: {
     768: {
-      perPage: 3,
+      perPoge: 3,
       gap: 10,
       perMove: 1,
+    },
+
+    992: {
+      perPage: 3,
+      perMove: 1,
+      focus: "none",
+    },
+
+    1200: {
+      perPage: 4,
     },
   },
 });

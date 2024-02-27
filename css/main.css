@@ -98,8 +98,8 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .mobile-category .category {
-    max-width: 20%;
-    margin-left: 2px;
+    max-width: 20% !important;
+    margin-left: 2px !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -439,6 +439,16 @@ a {
     font-size: 11px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .subscribe-container .icon-content p {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .subscribe-container .icon-content {
+    margin-right: 10px;
+  }
+}
 .subscribe-container .icon-box-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,7 +470,12 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .subscribe-container .icon-box-right a {
-    margin-left: auto;
+    margin-left: 70px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .subscribe-container .icon-box-right a {
+    margin-right: 85px;
   }
 }
 .subscribe-container .btn-primary {
@@ -870,12 +885,27 @@ a {
   color: #439ddf;
 }
 
-.vendor-details .vendor-personal h4 {
+.vendor .vendor-details .vendor-personal h4 {
   font-size: 16px;
 }
+@media only screen and (max-width: 768px) {
+  .vendor .vendor-details .vendor-personal h4 {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .vendor .vendor-details .vendor-personal h4 .vendor-product-count {
+    font-size: 10px;
+  }
+}
 @media only screen and (max-width: 576px) {
-  .vendor-details .vendor-rating i {
+  .vendor .vendor-details .vendor-rating i {
     font-size: 9px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .vendor .vendor-details .vendor-rating i {
+    font-size: 10px;
   }
 }
 
@@ -887,6 +917,21 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .vendor-product-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .vendor-product-img img {
+    width: 30%;
   }
 }
 

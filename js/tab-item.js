@@ -13,15 +13,15 @@ const tabitem = new Splide("#tabitem", {
       gap: 10,
       perMove: 1,
     },
-  },
 
-  breakpoints: {
     768: {
       perPage: 3,
       gap: 10,
       perMove: 1,
     },
   },
+
+  
 });
 
 tabitem.mount();
@@ -41,9 +41,7 @@ const tabitem2 = new Splide("#tabitem-2", {
       gap: 10,
       perMove: 1,
     },
-  },
 
-  breakpoints: {
     768: {
       perPage: 3,
       gap: 10,
@@ -69,9 +67,8 @@ const toprated = new Splide("#toprated", {
       gap: 10,
       perMove: 1,
     },
-  },
 
-  breakpoints: {
+
     768: {
       perPage: 3,
       gap: 10,
@@ -97,9 +94,7 @@ const newarrival1 = new Splide("#newarrival-1", {
       gap: 10,
       perMove: 1,
     },
-  },
 
-  breakpoints: {
     768: {
       perPage: 3,
       gap: 10,
@@ -125,9 +120,7 @@ const feature = new Splide("#feature", {
       gap: 10,
       perMove: 1,
     },
-  },
-
-  breakpoints: {
+    
     768: {
       perPage: 3,
       gap: 10,
