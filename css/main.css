@@ -913,9 +913,8 @@ a {
     font-size: 10px;
   }
 }
-
 @media only screen and (max-width: 576px) {
-  .vendor-product-img {
+  .vendor .vendor-product .vendor-product-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -925,7 +924,7 @@ a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .vendor-product-img {
+  .vendor .vendor-product .vendor-product-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -935,7 +934,7 @@ a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .vendor-product-img img {
+  .vendor .vendor-product .vendor-product-img img {
     width: 30%;
   }
 }

@@ -22,9 +22,8 @@
       }
     }
   }
-}
-
-.vendor-product-img {
+  .vendor-product{
+    .vendor-product-img {
   @include sm {
     display: flex;
     justify-content: space-between;
@@ -40,3 +39,7 @@
     }
   }
 }
+  }
+}
+
+ 
