@@ -98,7 +98,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .mobile-category .category.category-firstchild {
-    margin-left: unset;
+    margin-left: unset !important;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -109,7 +109,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .mobile-category .category {
-    margin-left: 30px;
+    margin-left: 30px !important;
     max-width: 35%;
   }
 }
@@ -594,10 +594,8 @@ a {
 #nav-container {
   background: -webkit-gradient(linear, left top, right top, from(rgb(92, 163, 218)), color-stop(35%, rgb(32, 124, 202)), to(rgb(29, 95, 171)));
   background: linear-gradient(90deg, rgb(92, 163, 218) 0%, rgb(32, 124, 202) 35%, rgb(29, 95, 171) 100%);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #nav-container form {
   width: 600px;
@@ -823,9 +821,6 @@ a {
   .hot-deals .countdown {
     width: 85%;
   }
-}
-.hot-deals .hot-deals-card {
-  margin-top: 50px;
 }
 @media only screen and (max-width: 576px) {
   .hot-deals .hot-deals-card img {

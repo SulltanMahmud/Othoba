@@ -1,6 +1,6 @@
 @mixin sm {
   @media only screen and (max-width: 576px) {
-     @content;
+    @content;
   }
 }
 
@@ -13,8 +13,8 @@
 
 //----------- large devices (desktops, 992px and up) -----------
 @mixin lg {
-  @media only screen and (max-width: 992px) {
-    
+  @media only screen and (max-width: 1024px) {
+    @content;
   }
 }
 
@@ -27,7 +27,7 @@
 
 //----------- xx-large devices (larger desktops, 1400px and up) -----------
 @mixin xxl {
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (max-width: 1400px) {
     @content;
   }
 }

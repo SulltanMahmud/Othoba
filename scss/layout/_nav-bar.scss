@@ -5,7 +5,8 @@
     rgb(32, 124, 202) 35%,
     rgb(29, 95, 171) 100%
   );
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+
   form {
     width: 600px;
     @include md {
