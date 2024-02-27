@@ -14,6 +14,12 @@ const afterhotdealsplide = new Splide("#afterhotdealsplide", {
       perPage: 1,
     },
   },
+
+  breakpoints: {
+    768: {
+      perPage: 3,
+    },
+  },
 });
 
 afterhotdealsplide.mount();

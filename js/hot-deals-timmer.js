@@ -6,12 +6,16 @@ const hotDealsSplide = new Splide("#hot-deals-day", {
   perMove: 1,
   gap: 20,
   // autoplay:true,
-  
 
   breakpoints: {
     576: {
-       perPage: 1,
+      perPage: 1,
+    },
+  },
 
+  breakpoints: {
+    768: {
+      perPage: 1,
     },
   },
 });

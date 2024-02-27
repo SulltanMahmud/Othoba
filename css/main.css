@@ -80,10 +80,32 @@ a {
     display: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  .mobile-category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+  }
+  .mobile-category::-webkit-scrollbar {
+    display: none;
+  }
+}
 @media only screen and (max-width: 576px) {
   .mobile-category .category {
     max-width: 20%;
     margin-left: 2px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mobile-category .category {
+    margin-left: 30px;
+    max-width: 35%;
   }
 }
 .mobile-category .category:hover .category-img {
@@ -159,6 +181,12 @@ a {
 @media only screen and (max-width: 576px) {
   .mobile-category .category-content .category-name {
     font-size: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mobile-category .category-content .category-name {
+    font-size: 10px;
+    margin-left: 5px;
   }
 }
 .mobile-category .category-content a {
@@ -599,13 +627,33 @@ a {
   font-weight: 500;
   line-height: 15.55px;
 }
+@media only screen and (max-width: 768px) {
+  .grocery-content {
+    font-size: 11px;
+  }
+}
 .grocery-rating {
   font-size: 12px;
   line-height: 12px;
   color: darkgray;
 }
+@media only screen and (max-width: 768px) {
+  .grocery-rating {
+    font-size: 8px;
+  }
+}
 .grocery-price {
   font-weight: 800;
+}
+@media only screen and (max-width: 768px) {
+  .grocery-price {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grocery span {
+    font-size: 10px;
+  }
 }
 
 #first-splide .splide__pagination__page {
@@ -739,6 +787,12 @@ a {
 .hot-deals .countdown:hover {
   visibility: hidden;
   opacity: 0;
+}
+@media only screen and (max-width: 768px) {
+  .hot-deals .countdown {
+    width: 40%;
+    top: 75%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .hot-deals .countdown {

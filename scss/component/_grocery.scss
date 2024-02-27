@@ -3,6 +3,10 @@
     font-size: 13px;
     font-weight: 500;
     line-height: 15.55px;
+
+    @include md{
+      font-size: 11px;
+    }
   }
 
   &-rating {
@@ -10,8 +14,20 @@
 
     line-height: 12px;
     color: darkgray;
+    @include md{
+      font-size: 8px;
+    }
   }
   &-price {
     font-weight: 800;
+
+    @include md{
+      font-size: 12px;
+    }
+  }
+  span{
+    @include md{
+      font-size: 10px;
+    }
   }
 }
