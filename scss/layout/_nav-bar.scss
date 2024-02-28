@@ -13,6 +13,10 @@
       width: 200px;
     }
 
+    @include lg{
+      width: 200px;
+    }
+
     @include sm {
       width: 600px;
     }

@@ -22,6 +22,12 @@
       top: 75%;
     }
 
+     @include lg{
+      width: 40%;
+      top: 75%;
+    }
+
+
     top: 68%;
     @include sm {
       top: 47%;
@@ -42,7 +48,18 @@
       @include sm {
         width:100%;
       }
+
+       .deals-card{
+        @include lg{
+          margin-top: 20px;
+        }
+       }
     }
+    .deals-card{
+        @include lg{
+          margin-top: 30px;
+        }
+       }
 
     
     .hot-deals-card-title {

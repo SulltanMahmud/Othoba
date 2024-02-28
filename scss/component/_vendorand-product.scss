@@ -33,8 +33,17 @@
     display: flex;
     justify-content: space-between;
   }
+
+   @include lg {
+    display: flex;
+    justify-content: space-between;
+  }
   img {
     @include md {
+      width: 30%;
+    }
+
+    @include lg{
       width: 30%;
     }
   }

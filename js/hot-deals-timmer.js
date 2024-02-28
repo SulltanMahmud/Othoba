@@ -11,10 +11,12 @@ const hotDealsSplide = new Splide("#hot-deals-day", {
     576: {
       perPage: 1,
     },
-  },
 
-  breakpoints: {
     768: {
+      perPage: 1,
+    },
+
+    992: {
       perPage: 1,
     },
   },
